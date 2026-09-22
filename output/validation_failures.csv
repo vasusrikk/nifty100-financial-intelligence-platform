@@ -1,0 +1,1531 @@
+rule,table,company_id,year,field,issue,severity
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: PARSE_ERROR,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,profitandloss,ADANIPORTS,,,Duplicate annual record: PARSE_ERROR,CRITICAL
+DQ-02,profitandloss,AMBUJACEM,,,Duplicate annual record: PARSE_ERROR,CRITICAL
+DQ-02,profitandloss,AMBUJACEM,,,Duplicate annual record: PARSE_ERROR,CRITICAL
+DQ-02,profitandloss,HCLTECH,,,Duplicate annual record: PARSE_ERROR,CRITICAL
+DQ-02,profitandloss,HCLTECH,,,Duplicate annual record: PARSE_ERROR,CRITICAL
+DQ-02,profitandloss,SHREECEM,,,Duplicate annual record: PARSE_ERROR,CRITICAL
+DQ-02,profitandloss,SHREECEM,,,Duplicate annual record: PARSE_ERROR,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2024-09,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,balancesheet,ASIANPAINT,,,Duplicate annual record: 2024-09,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,balancesheet,PNB,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2024-09,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,balancesheet,POWERGRID,,,Duplicate annual record: 2024-09,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2024-09,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,balancesheet,TECHM,,,Duplicate annual record: 2024-09,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,cashflow,ABB,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2013-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2014-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2015-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2016-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2017-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2018-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2019-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2020-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2021-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2022-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2023-03,CRITICAL
+DQ-02,cashflow,TCS,,,Duplicate annual record: 2024-03,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,AGTL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,AGTL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,AGTL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,AGTL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,AGTL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,AGTL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,AGTL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,analysis,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,analysis,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,analysis,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,analysis,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VBL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,VEDL,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZOMATO,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,,company_id not found in companies,CRITICAL
+DQ-03,prosandcons,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,prosandcons,WIPRO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,ULTRACEMCO,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-03,financial_ratios,UNIONBANK,,,company_id not found in companies,CRITICAL
+DQ-05,profitandloss,ADANIENSOL,,,Source OPM=30.0; computed=34.39,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=1353.0; computed=30.58,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=2307.0; computed=31.47,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=3097.0; computed=31.36,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=3466.0; computed=32.61,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=-5715.0; computed=53.45,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=-10277.0; computed=63.12,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=-5447.0; computed=49.39,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=-9859.0; computed=55.98,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=-2510.0; computed=50.12,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=3170.0; computed=44.47,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=13857.0; computed=34.16,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=11952.0; computed=34.69,WARNING
+DQ-05,profitandloss,AXISBANK,,,Source OPM=9061.0; computed=36.94,WARNING
+DQ-05,profitandloss,BAJFINANCE,,,Source OPM=1367.0; computed=32.49,WARNING
+DQ-05,profitandloss,BAJFINANCE,,,Source OPM=1986.0; computed=32.25,WARNING
+DQ-05,profitandloss,BAJFINANCE,,,Source OPM=2867.0; computed=32.60,WARNING
+DQ-05,profitandloss,BAJFINANCE,,,Source OPM=3935.0; computed=32.28,WARNING
+DQ-05,profitandloss,BAJFINANCE,,,Source OPM=6310.0; computed=29.50,WARNING
+DQ-05,profitandloss,BAJFINANCE,,,Source OPM=7608.0; computed=34.73,WARNING
+DQ-05,profitandloss,BAJFINANCE,,,Source OPM=6314.0; computed=40.64,WARNING
+DQ-05,profitandloss,BAJFINANCE,,,Source OPM=9906.0; computed=37.55,WARNING
+DQ-05,profitandloss,BAJFINANCE,,,Source OPM=16018.0; computed=30.65,WARNING
+DQ-05,profitandloss,BAJFINANCE,,,Source OPM=19987.0; computed=29.29,WARNING
+DQ-05,profitandloss,BAJFINANCE,,,Source OPM=21417.0; computed=30.42,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=1006.0; computed=30.05,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=809.0; computed=29.78,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=902.0; computed=29.98,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=-11700.0; computed=55.44,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=-4372.0; computed=43.28,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=-9197.0; computed=56.65,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=-5414.0; computed=48.79,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=-11728.0; computed=51.44,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=-6957.0; computed=51.23,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=-2948.0; computed=51.12,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=6329.0; computed=40.45,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=4102.0; computed=37.49,WARNING
+DQ-05,profitandloss,BANKBARODA,,,Source OPM=3526.0; computed=37.42,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=655.0; computed=21.18,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-672.0; computed=24.35,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-621.0; computed=23.51,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-8008.0; computed=40.38,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-5775.0; computed=37.85,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-13350.0; computed=61.87,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-11590.0; computed=56.73,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-12867.0; computed=53.88,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-18367.0; computed=61.83,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-13657.0; computed=58.39,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-9877.0; computed=49.80,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-7745.0; computed=41.75,WARNING
+DQ-05,profitandloss,CANBK,,,Source OPM=-8985.0; computed=40.23,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=472.0; computed=26.77,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=578.0; computed=28.42,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=696.0; computed=28.56,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=899.0; computed=30.04,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=1143.0; computed=28.16,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=1451.0; computed=26.10,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=1888.0; computed=22.96,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=1699.0; computed=27.79,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=2094.0; computed=30.40,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=2924.0; computed=28.83,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=3515.0; computed=28.10,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=4548.0; computed=28.10,WARNING
+DQ-05,profitandloss,CHOLAFIN,,,Source OPM=5175.0; computed=28.67,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=2214.0; computed=73.26,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=2147.0; computed=78.90,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=2163.0; computed=80.94,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=2480.0; computed=82.02,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=2496.0; computed=82.66,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=2826.0; computed=81.35,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=3097.0; computed=81.07,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=3206.0; computed=81.29,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=4252.0; computed=77.80,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=4553.0; computed=79.08,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=5027.0; computed=77.91,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=6291.0; computed=75.59,WARNING
+DQ-05,profitandloss,CIPLA,,,Source OPM=6906.0; computed=74.40,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=18087.0; computed=73.52,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=17766.0; computed=74.84,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=17343.0; computed=76.60,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=18714.0; computed=75.96,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=12448.0; computed=84.07,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=9288.0; computed=89.10,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=25007.0; computed=74.89,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=21581.0; computed=77.54,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=18628.0; computed=79.31,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=24721.0; computed=77.47,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=44232.0; computed=68.01,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=47971.0; computed=66.29,WARNING
+DQ-05,profitandloss,COALINDIA,,,Source OPM=46610.0; computed=66.78,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=3534.0; computed=35.22,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=5602.0; computed=31.74,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=7214.0; computed=31.90,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=9037.0; computed=31.75,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=11374.0; computed=32.56,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=13374.0; computed=34.63,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=16592.0; computed=33.15,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=14593.0; computed=37.20,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=16848.0; computed=40.81,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=20795.0; computed=41.61,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=29932.0; computed=36.92,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=-44685.0; computed=61.41,WARNING
+DQ-05,profitandloss,HDFCBANK,,,Source OPM=-57587.0; computed=62.61,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=525.0; computed=96.27,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=605.0; computed=96.48,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=874.0; computed=96.79,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=953.0; computed=94.74,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=972.0; computed=96.83,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=1074.0; computed=96.67,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=1215.0; computed=96.87,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=1141.0; computed=96.12,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=1235.0; computed=98.27,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=778.0; computed=98.84,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=80.0; computed=99.89,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=531.0; computed=99.48,WARNING
+DQ-05,profitandloss,HDFCLIFE,,,Source OPM=725.0; computed=99.28,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=3553.0; computed=85.94,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=3520.0; computed=87.22,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=4424.0; computed=84.45,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=4585.0; computed=83.97,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=5334.0; computed=83.57,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=5025.0; computed=85.21,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=4070.0; computed=86.09,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=4058.0; computed=86.90,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=3256.0; computed=88.98,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=4099.0; computed=88.00,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=5235.0; computed=86.15,WARNING
+DQ-05,profitandloss,HEROMOTOCO,,,Source OPM=5561.0; computed=86.13,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=7699.0; computed=90.40,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=8024.0; computed=90.85,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=8844.0; computed=91.52,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=7778.0; computed=92.12,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=12317.0; computed=87.71,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=13695.0; computed=88.11,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=15511.0; computed=88.12,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=14306.0; computed=87.89,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=17559.0; computed=86.70,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=28347.0; computed=85.47,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=22666.0; computed=89.85,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=23872.0; computed=88.95,WARNING
+DQ-05,profitandloss,HINDALCO,,,Source OPM=27931.0; computed=87.53,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=4220.0; computed=84.37,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=4759.0; computed=83.72,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=5412.0; computed=83.07,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=5910.0; computed=81.64,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=6328.0; computed=80.92,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=7499.0; computed=78.90,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=8880.0; computed=77.41,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=9861.0; computed=75.21,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=11626.0; computed=75.28,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=12857.0; computed=75.49,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=14147.0; computed=76.65,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=14659.0; computed=76.32,WARNING
+DQ-05,profitandloss,HINDUNILVR,,,Source OPM=14759.0; computed=76.45,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-15085.0; computed=70.59,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-13084.0; computed=66.40,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-16120.0; computed=70.53,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-26955.0; computed=88.12,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-37737.0; computed=104.76,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-44906.0; computed=117.12,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-50971.0; computed=116.38,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-45190.0; computed=100.62,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-44805.0; computed=102.41,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-26558.0; computed=84.69,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-17341.0; computed=72.57,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-14152.0; computed=62.41,WARNING
+DQ-05,profitandloss,ICICIBANK,,,Source OPM=-31575.0; computed=69.63,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=-178.0; computed=104.46,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=-225.0; computed=105.19,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=-221.0; computed=105.24,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=764.0; computed=87.34,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=919.0; computed=87.78,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=-262.0; computed=103.79,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=1669.0; computed=85.05,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=1772.0; computed=84.61,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=2072.0; computed=82.97,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=1016.0; computed=93.66,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=1264.0; computed=92.93,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=2577.0; computed=87.42,WARNING
+DQ-05,profitandloss,ICICIGI,,,Source OPM=3363.0; computed=85.57,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=745.0; computed=96.28,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=1504.0; computed=93.13,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=1655.0; computed=95.20,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=1842.0; computed=91.17,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=1806.0; computed=95.22,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=1771.0; computed=95.44,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=541.0; computed=98.70,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=-319.0; computed=101.52,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=-390.0; computed=100.47,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=-2163.0; computed=103.40,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=-1757.0; computed=103.48,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=-1829.0; computed=102.03,WARNING
+DQ-05,profitandloss,ICICIPRULI,,,Source OPM=321.0; computed=99.59,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=286.0; computed=27.88,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=335.0; computed=30.95,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=288.0; computed=32.33,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=329.0; computed=35.28,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=379.0; computed=39.46,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=942.0; computed=37.93,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=-437.0; computed=41.70,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=-553.0; computed=43.81,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=-2469.0; computed=55.16,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=-839.0; computed=51.39,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=2067.0; computed=42.69,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=2978.0; computed=38.55,WARNING
+DQ-05,profitandloss,INDUSINDBK,,,Source OPM=1323.0; computed=41.03,WARNING
+DQ-05,profitandloss,JIOFIN,,,Source OPM=88.0; computed=86.67,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-1789.0; computed=60.92,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-1379.0; computed=58.84,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-3366.0; computed=72.96,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-2263.0; computed=56.57,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-3965.0; computed=66.44,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-4141.0; computed=66.87,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-5114.0; computed=66.23,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-5005.0; computed=67.45,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-9958.0; computed=90.83,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-8512.0; computed=90.98,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-5746.0; computed=79.44,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-13382.0; computed=83.67,WARNING
+DQ-05,profitandloss,KOTAKBANK,,,Source OPM=-14146.0; computed=79.42,WARNING
+DQ-05,profitandloss,SUNPHARMA,,,Source OPM=28.0; computed=26.84,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=855.0; computed=90.71,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=433.0; computed=96.11,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=1904.0; computed=86.33,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=3164.0; computed=80.40,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=2219.0; computed=88.06,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=3030.0; computed=86.84,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=-151.0; computed=100.53,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=4069.0; computed=88.62,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=2.0; computed=99.98,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=558.0; computed=97.85,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=6521.0; computed=88.02,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=16331.0; computed=76.30,WARNING
+DQ-05,profitandloss,INDIGO,,,Source OPM=15908.0; computed=79.20,WARNING
+DQ-06,profitandloss,ADANIENSOL,,,Sales <= 0,WARNING
+DQ-07,profitandloss,ABB,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ADANIENSOL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ADANIENT,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ADANIGREEN,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ADANIPORTS,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ADANIPORTS,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ADANIPOWER,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,AMBUJACEM,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,AMBUJACEM,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,APOLLOHOSP,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ASIANPAINT,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ATGL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,BAJAJ-AUTO,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,AXISBANK,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,BAJAJFINSV,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,BAJAJHLDNG,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,BAJFINANCE,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,BANKBARODA,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,BHARTIARTL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,BEL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,BHEL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,BOSCHLTD,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,BPCL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,BRITANNIA,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,CANBK,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,CHOLAFIN,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,CIPLA,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,COALINDIA,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,DABUR,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,DIVISLAB,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,DLF,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,DMART,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,DRREDDY,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,EICHERMOT,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,GAIL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,GODREJCP,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,GRASIM,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,HAL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,HAVELLS,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,HCLTECH,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,HCLTECH,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,HDFCBANK,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,HDFCLIFE,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,HEROMOTOCO,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,HINDALCO,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,HINDUNILVR,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ICICIBANK,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ICICIGI,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ICICIPRULI,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,INDUSINDBK,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,INFY,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,IOC,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,IRCTC,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,IRFC,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ITC,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,JINDALSTEL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,JIOFIN,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,JSWENERGY,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,JSWSTEEL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,KOTAKBANK,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,LICI,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,LODHA,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,LT,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,LTIM,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,M&M,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,MARUTI,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,MOTHERSON,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,NAUKRI,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,NESTLEIND,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,NHPC,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,NTPC,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ONGC,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,PFC,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,PIDILITIND,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,PNB,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,POWERGRID,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,RECLTD,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,RELIANCE,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,SBILIFE,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,SBIN,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,SHREECEM,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,SHREECEM,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,SHRIRAMFIN,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,SUNPHARMA,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,TATACONSUM,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,TATAMOTORS,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,TATAPOWER,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,TATASTEEL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,TCS,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,TECHM,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,TITAN,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,TORNTPHARM,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,TRENT,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,TVSMOTOR,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ULTRACEMCO,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,UNIONBANK,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,UNITDSPR,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,VBL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,VEDL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,WIPRO,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ZOMATO,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,ZYDUSLIFE,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,profitandloss,INDIGO,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,balancesheet,ZYDUSLIFE,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,balancesheet,ZOMATO,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,balancesheet,WIPRO,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,balancesheet,VEDL,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-07,balancesheet,UNITDSPR,,,Invalid year: PARSE_ERROR,CRITICAL
+DQ-09,cashflow,TVSMOTOR,,,Net CF=532.0; components=-128.0,WARNING
+DQ-11,profitandloss,ADANIENT,,,Tax percentage outside 0-60: -64.0,WARNING
+DQ-11,profitandloss,ADANIGREEN,,,Tax percentage outside 0-60: -75.0,WARNING
+DQ-11,profitandloss,ADANIGREEN,,,Tax percentage outside 0-60: -35.0,WARNING
+DQ-11,profitandloss,ADANIGREEN,,,Tax percentage outside 0-60: -19.0,WARNING
+DQ-11,profitandloss,ADANIPOWER,,,Tax percentage outside 0-60: -79.0,WARNING
+DQ-11,profitandloss,ADANIPOWER,,,Tax percentage outside 0-60: -47.0,WARNING
+DQ-11,profitandloss,ADANIPOWER,,,Tax percentage outside 0-60: -1.0,WARNING
+DQ-11,profitandloss,ADANIPOWER,,,Tax percentage outside 0-60: -40.0,WARNING
+DQ-11,profitandloss,AMBUJACEM,,,Tax percentage outside 0-60: -2.0,WARNING
+DQ-11,profitandloss,APOLLOHOSP,,,Tax percentage outside 0-60: 65.0,WARNING
+DQ-11,profitandloss,AXISBANK,,,Tax percentage outside 0-60: -99.0,WARNING
+DQ-11,profitandloss,AXISBANK,,,Tax percentage outside 0-60: 67.0,WARNING
+DQ-11,profitandloss,BANKBARODA,,,Tax percentage outside 0-60: -19.0,WARNING
+DQ-11,profitandloss,BANKBARODA,,,Tax percentage outside 0-60: -9.0,WARNING
+DQ-11,profitandloss,BANKBARODA,,,Tax percentage outside 0-60: -99.0,WARNING
+DQ-11,profitandloss,BANKBARODA,,,Tax percentage outside 0-60: 77.0,WARNING
+DQ-11,profitandloss,BHARTIARTL,,,Tax percentage outside 0-60: 62.0,WARNING
+DQ-11,profitandloss,BHARTIARTL,,,Tax percentage outside 0-60: -99.0,WARNING
+DQ-11,profitandloss,BHARTIARTL,,,Tax percentage outside 0-60: -28.0,WARNING
+DQ-11,profitandloss,BHARTIARTL,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,BHEL,,,Tax percentage outside 0-60: -39.0,WARNING
+DQ-11,profitandloss,BHEL,,,Tax percentage outside 0-60: 64.0,WARNING
+DQ-11,profitandloss,BHEL,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,BHEL,,,Tax percentage outside 0-60: -25.0,WARNING
+DQ-11,profitandloss,BHEL,,,Tax percentage outside 0-60: -16.0,WARNING
+DQ-11,profitandloss,CANBK,,,Tax percentage outside 0-60: -13.0,WARNING
+DQ-11,profitandloss,CANBK,,,Tax percentage outside 0-60: -36.0,WARNING
+DQ-11,profitandloss,CANBK,,,Tax percentage outside 0-60: -99.0,WARNING
+DQ-11,profitandloss,DLF,,,Tax percentage outside 0-60: -16.0,WARNING
+DQ-11,profitandloss,DLF,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,DRREDDY,,,Tax percentage outside 0-60: -7.0,WARNING
+DQ-11,profitandloss,GODREJCP,,,Tax percentage outside 0-60: -12.0,WARNING
+DQ-11,profitandloss,GODREJCP,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,GRASIM,,,Tax percentage outside 0-60: -1.0,WARNING
+DQ-11,profitandloss,HDFCLIFE,,,Tax percentage outside 0-60: -61.0,WARNING
+DQ-11,profitandloss,HINDALCO,,,Tax percentage outside 0-60: 75.0,WARNING
+DQ-11,profitandloss,HINDALCO,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,IOC,,,Tax percentage outside 0-60: -74.0,WARNING
+DQ-11,profitandloss,IRFC,,,Tax percentage outside 0-60: 64.0,WARNING
+DQ-11,profitandloss,JINDALSTEL,,,Tax percentage outside 0-60: -6.0,WARNING
+DQ-11,profitandloss,JINDALSTEL,,,Tax percentage outside 0-60: -22.0,WARNING
+DQ-11,profitandloss,JINDALSTEL,,,Tax percentage outside 0-60: -17.0,WARNING
+DQ-11,profitandloss,JINDALSTEL,,,Tax percentage outside 0-60: -13.0,WARNING
+DQ-11,profitandloss,JINDALSTEL,,,Tax percentage outside 0-60: -14.0,WARNING
+DQ-11,profitandloss,JSWENERGY,,,Tax percentage outside 0-60: 75.0,WARNING
+DQ-11,profitandloss,JSWSTEEL,,,Tax percentage outside 0-60: 70.0,WARNING
+DQ-11,profitandloss,JSWSTEEL,,,Tax percentage outside 0-60: -80.0,WARNING
+DQ-11,profitandloss,JSWSTEEL,,,Tax percentage outside 0-60: -30.0,WARNING
+DQ-11,profitandloss,LICI,,,Tax percentage outside 0-60: 68.0,WARNING
+DQ-11,profitandloss,LICI,,,Tax percentage outside 0-60: 80.0,WARNING
+DQ-11,profitandloss,LICI,,,Tax percentage outside 0-60: 76.0,WARNING
+DQ-11,profitandloss,LICI,,,Tax percentage outside 0-60: 66.0,WARNING
+DQ-11,profitandloss,LODHA,,,Tax percentage outside 0-60: -44.0,WARNING
+DQ-11,profitandloss,LODHA,,,Tax percentage outside 0-60: -8.0,WARNING
+DQ-11,profitandloss,M&M,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,MOTHERSON,,,Tax percentage outside 0-60: -5.0,WARNING
+DQ-11,profitandloss,NAUKRI,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,NAUKRI,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,NAUKRI,,,Tax percentage outside 0-60: 95.0,WARNING
+DQ-11,profitandloss,NAUKRI,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,NHPC,,,Tax percentage outside 0-60: -2.0,WARNING
+DQ-11,profitandloss,NHPC,,,Tax percentage outside 0-60: -17.0,WARNING
+DQ-11,profitandloss,NTPC,,,Tax percentage outside 0-60: -2.0,WARNING
+DQ-11,profitandloss,NTPC,,,Tax percentage outside 0-60: -25.0,WARNING
+DQ-11,profitandloss,PNB,,,Tax percentage outside 0-60: -31.0,WARNING
+DQ-11,profitandloss,PNB,,,Tax percentage outside 0-60: -37.0,WARNING
+DQ-11,profitandloss,PNB,,,Tax percentage outside 0-60: -35.0,WARNING
+DQ-11,profitandloss,POWERGRID,,,Tax percentage outside 0-60: -10.0,WARNING
+DQ-11,profitandloss,SBIN,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,SBIN,,,Tax percentage outside 0-60: -66.0,WARNING
+DQ-11,profitandloss,SHREECEM,,,Tax percentage outside 0-60: -6.0,WARNING
+DQ-11,profitandloss,TATACONSUM,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,TATAMOTORS,,,Tax percentage outside 0-60: -8.0,WARNING
+DQ-11,profitandloss,TATAMOTORS,,,Tax percentage outside 0-60: -14.0,WARNING
+DQ-11,profitandloss,TATAPOWER,,,Tax percentage outside 0-60: 92.0,WARNING
+DQ-11,profitandloss,TATAPOWER,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,TATAPOWER,,,Tax percentage outside 0-60: 72.0,WARNING
+DQ-11,profitandloss,TATASTEEL,,,Tax percentage outside 0-60: 78.0,WARNING
+DQ-11,profitandloss,TATASTEEL,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,TATASTEEL,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,TATASTEEL,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,TATASTEEL,,,Tax percentage outside 0-60: -99.0,WARNING
+DQ-11,profitandloss,TATASTEEL,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,TRENT,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,TRENT,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,TRENT,,,Tax percentage outside 0-60: -12.0,WARNING
+DQ-11,profitandloss,TRENT,,,Tax percentage outside 0-60: 69.0,WARNING
+DQ-11,profitandloss,ULTRACEMCO,,,Tax percentage outside 0-60: -11.0,WARNING
+DQ-11,profitandloss,UNIONBANK,,,Tax percentage outside 0-60: -58.0,WARNING
+DQ-11,profitandloss,UNIONBANK,,,Tax percentage outside 0-60: -21.0,WARNING
+DQ-11,profitandloss,UNIONBANK,,,Tax percentage outside 0-60: -25.0,WARNING
+DQ-11,profitandloss,UNIONBANK,,,Tax percentage outside 0-60: -27.0,WARNING
+DQ-11,profitandloss,UNIONBANK,,,Tax percentage outside 0-60: -22.0,WARNING
+DQ-11,profitandloss,UNITDSPR,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,UNITDSPR,,,Tax percentage outside 0-60: 61.0,WARNING
+DQ-11,profitandloss,VBL,,,Tax percentage outside 0-60: -20.0,WARNING
+DQ-11,profitandloss,VBL,,,Tax percentage outside 0-60: -11.0,WARNING
+DQ-11,profitandloss,VBL,,,Tax percentage outside 0-60: 99.0,WARNING
+DQ-11,profitandloss,VEDL,,,Tax percentage outside 0-60: -25.0,WARNING
+DQ-11,profitandloss,VEDL,,,Tax percentage outside 0-60: -9.0,WARNING
+DQ-11,profitandloss,VEDL,,,Tax percentage outside 0-60: -37.0,WARNING
+DQ-11,profitandloss,VEDL,,,Tax percentage outside 0-60: -43.0,WARNING
+DQ-11,profitandloss,VEDL,,,Tax percentage outside 0-60: 63.0,WARNING
+DQ-11,profitandloss,ZOMATO,,,Tax percentage outside 0-60: -4.0,WARNING
+DQ-11,profitandloss,ZOMATO,,,Tax percentage outside 0-60: -21.0,WARNING
+DQ-11,profitandloss,INDIGO,,,Tax percentage outside 0-60: -99.0,WARNING
+DQ-11,profitandloss,INDIGO,,,Tax percentage outside 0-60: -10.0,WARNING
+DQ-11,profitandloss,INDIGO,,,Tax percentage outside 0-60: -2.0,WARNING
+DQ-12,profitandloss,BHARTIARTL,,,Dividend payout > 200: 244.0,WARNING
+DQ-12,profitandloss,BRITANNIA,,,Dividend payout > 200: 204.0,WARNING
+DQ-12,profitandloss,M&M,,,Dividend payout > 200: 205.0,WARNING
+DQ-12,profitandloss,SBIN,,,Dividend payout > 200: 859.0,WARNING
+DQ-12,profitandloss,TATAPOWER,,,Dividend payout > 200: 210.0,WARNING
+DQ-12,profitandloss,VEDL,,,Dividend payout > 200: 357.0,WARNING
+DQ-12,profitandloss,VEDL,,,Dividend payout > 200: 259.0,WARNING
+DQ-13,documents,ADANIENSOL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIENSOL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIENSOL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIENSOL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIENSOL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIENSOL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIENSOL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIENT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIENT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIENT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIGREEN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIGREEN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIGREEN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIGREEN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIGREEN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIGREEN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIGREEN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIGREEN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIGREEN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPORTS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPORTS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPORTS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPORTS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPORTS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPORTS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPORTS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPORTS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPORTS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPOWER,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPOWER,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPOWER,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPOWER,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPOWER,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ADANIPOWER,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,AMBUJACEM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,AMBUJACEM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,AMBUJACEM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,AMBUJACEM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,AMBUJACEM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,APOLLOHOSP,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,APOLLOHOSP,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,APOLLOHOSP,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,APOLLOHOSP,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ASIANPAINT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ASIANPAINT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ASIANPAINT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ASIANPAINT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ATGL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ATGL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ATGL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ATGL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ATGL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ATGL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ATGL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ATGL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ATGL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ATGL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,AXISBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,AXISBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BAJAJ-AUTO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BAJAJ-AUTO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BAJAJ-AUTO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BAJAJFINSV,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BAJAJFINSV,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BAJAJHLDNG,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BAJAJHLDNG,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BAJFINANCE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BAJFINANCE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BANKBARODA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BANKBARODA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHARTIARTL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHARTIARTL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHARTIARTL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHARTIARTL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHARTIARTL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BHEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BOSCHLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BOSCHLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BOSCHLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BOSCHLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BOSCHLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BOSCHLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BOSCHLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BOSCHLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BOSCHLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BPCL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BPCL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BPCL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BPCL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BPCL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BPCL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BRITANNIA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,BRITANNIA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,CANBK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,CANBK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,CHOLAFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,CHOLAFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,CHOLAFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,CIPLA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,CIPLA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,COALINDIA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DABUR,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DABUR,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DLF,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DLF,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DLF,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DLF,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DMART,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DMART,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DMART,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DMART,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DMART,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DMART,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DMART,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DMART,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DRREDDY,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DRREDDY,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,DRREDDY,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,EICHERMOT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,EICHERMOT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,EICHERMOT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,GAIL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,GAIL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,GODREJCP,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,GODREJCP,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,GRASIM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,GRASIM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HAL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HAL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HAVELLS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HAVELLS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HCLTECH,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HCLTECH,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HCLTECH,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HDFCBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HDFCBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HDFCBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HDFCBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HDFCLIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HDFCLIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HDFCLIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HDFCLIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HDFCLIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HEROMOTOCO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HEROMOTOCO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HINDALCO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HINDALCO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HINDUNILVR,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,HINDUNILVR,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ICICIBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ICICIGI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ICICIPRULI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ICICIPRULI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ICICIPRULI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,INDIGO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,INDIGO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,INDIGO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,INDIGO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,INDIGO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,INDIGO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,INDIGO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,INDUSINDBK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,INDUSINDBK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,INFY,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,INFY,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IOC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IOC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IOC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IOC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRCTC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRCTC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRCTC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRCTC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRCTC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRCTC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRCTC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRCTC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRCTC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRCTC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRCTC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,IRFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ITC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ITC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ITC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JINDALSTEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JINDALSTEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JIOFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JSWENERGY,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JSWENERGY,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JSWENERGY,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JSWSTEEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,JSWSTEEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,KOTAKBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,KOTAKBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,KOTAKBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,KOTAKBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,KOTAKBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,KOTAKBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,KOTAKBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,KOTAKBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,KOTAKBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,KOTAKBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,KOTAKBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LICI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LICI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LICI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LICI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LICI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LICI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LICI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LICI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LICI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LICI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LODHA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LTIM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LTIM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LTIM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LTIM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LTIM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LTIM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LTIM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,LTIM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,M&M,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,M&M,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,MARUTI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,MARUTI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,MOTHERSON,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,MOTHERSON,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,NAUKRI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,NAUKRI,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,NESTLEIND,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,NHPC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,NHPC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,NTPC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,NTPC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ONGC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ONGC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ONGC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,PFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,PFC,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,PIDILITIND,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,PIDILITIND,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,PIDILITIND,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,PNB,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,PNB,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,POWERGRID,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,POWERGRID,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,RECLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,RECLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,RECLTD,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,RELIANCE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,RELIANCE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,RELIANCE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SBILIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SBILIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SBILIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SBILIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SBILIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SBILIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SBILIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SBILIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SBILIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SBIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SHREECEM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SHREECEM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SHREECEM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SHRIRAMFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SHRIRAMFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SHRIRAMFIN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SIEMENS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SIEMENS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SUNPHARMA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SUNPHARMA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,SUNPHARMA,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TATACONSUM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TATACONSUM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TATAMOTORS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TATAMOTORS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TATAPOWER,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TATAPOWER,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TATASTEEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TATASTEEL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TCS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TCS,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TECHM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TECHM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TECHM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TECHM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TITAN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TITAN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TITAN,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TORNTPHARM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TORNTPHARM,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TRENT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TRENT,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TVSMOTOR,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,TVSMOTOR,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ULTRACEMCO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ULTRACEMCO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ULTRACEMCO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,UNIONBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,UNIONBANK,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,UNITDSPR,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,UNITDSPR,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,UNITDSPR,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,VBL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,VBL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,VBL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,VBL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,VBL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,VBL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,VBL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,VBL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,VEDL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,VEDL,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,WIPRO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,WIPRO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZOMATO,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZYDUSLIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-13,documents,ZYDUSLIFE,,,Missing or invalid Annual_Report URL,WARNING
+DQ-14,profitandloss,JSWENERGY,,,Positive net profit but EPS=0.0,WARNING
+DQ-14,profitandloss,TATAPOWER,,,Positive net profit but EPS=0.0,WARNING
+DQ-14,profitandloss,TATAPOWER,,,Positive net profit but EPS=-1.0,WARNING
+DQ-14,profitandloss,VBL,,,Positive net profit but EPS=0.0,WARNING
+DQ-14,profitandloss,ZOMATO,,,Positive net profit but EPS=0.0,WARNING
+DQ-16,profitandloss,JIOFIN,,,Only 2 years of history,WARNING
+DQ-16,balancesheet,JIOFIN,,,Only 3 years of history,WARNING
+DQ-16,cashflow,JIOFIN,,,Only 2 years of history,WARNING
+DQ-16,balancesheet,SBIN,,,Only 0 years of history,WARNING
+DQ-16,cashflow,ATGL,,,Only 0 years of history,WARNING
