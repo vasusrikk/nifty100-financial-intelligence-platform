@@ -1,0 +1,14 @@
+check_id,check,status,details
+D13-01,financial_ratios contains rows,PASS,rows=1070
+D13-02,No duplicate company-year rows,PASS,duplicates=0
+D13-03,Foreign-key integrity,PASS,errors=0
+D13-04,Profitability KPI columns present,PASS,all present
+D13-05,Financial-sector leverage carve-out used,PASS,sector_relative_rows=258
+D13-06,High-leverage classification operational,PASS,high_leverage_rows=87
+D13-07,ICR classifications valid,PASS,"observed=['DEBT_FREE', 'ICR_WARNING', 'NORMAL']"
+D13-08,Net Debt source limitation documented,PASS,calculated_rows=0
+D13-09,CAGR edge-case flags valid,PASS,invalid_flags=0
+D13-10,Insufficient CAGR history handled,PASS,insufficient_flags=1373
+D13-11,CFO/PAT edge-case flags valid,PASS,"observed=['NEGATIVE_PAT', 'NORMAL', 'ZERO_PAT']"
+D13-12,Capex-dependent limitation documented,PASS,"calculated_values=0, documented_rows=1053"
+D13-13,No infinite KPI values,PASS,infinite_values=0
