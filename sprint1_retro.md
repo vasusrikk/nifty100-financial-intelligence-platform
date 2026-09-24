@@ -57,23 +57,31 @@ loading the supplied financial datasets into SQLite.
   - rejected
   - timestamp
   - runtime_s
-
 ### D06 — Manual Data Quality Review
-Five companies were manually reviewed across P&L, Balance Sheet
-and Cash Flow data:
+
+The five companies specified in the Sprint 1 requirements were manually
+reviewed across Profit & Loss, Balance Sheet, and Cash Flow:
 
 | Company | P&L Rows | Balance Sheet Rows | Cash Flow Rows |
 |---|---:|---:|---:|
 | TCS | 12 | 13 | 12 |
 | RELIANCE | 12 | 13 | 12 |
-| SBIN | 12 | 0 | 12 |
-| TITAN | 12 | 13 | 12 |
-| SUNPHARMA | 12 | 13 | 12 |
+| HDFCBANK | 12 | 12 | 12 |
+| INFY | 12 | 13 | 12 |
+| ICICIBANK | 12 | 12 | 12 |
 
-The SBIN Balance Sheet gap was investigated. The loaded source
-dataset itself contained zero SBIN Balance Sheet rows, so this was
-identified as a source-data coverage gap rather than an ETL loader
-failure.
+Three recent periods were spot-checked for each company across the
+three core financial statements.
+
+Observations:
+
+- All five required companies have P&L, Balance Sheet, and Cash Flow data.
+- TCS, RELIANCE, and INFY contain an additional 2024-09 Balance Sheet observation.
+- Negative cash-flow values found in some periods were retained because
+  negative cash flow is not by itself an ETL error.
+- No financial values were fabricated or manually altered during review.
+- Detailed evidence and observations are recorded in
+  `manual_check_notes.md`.
 
 ### D07 — Exploratory SQL
 Created `exploratory_queries.sql` containing 20 exploratory queries

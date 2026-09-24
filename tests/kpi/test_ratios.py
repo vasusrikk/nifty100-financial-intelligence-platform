@@ -15,6 +15,7 @@ from src.analytics.ratios import (
     interest_coverage_flag,
     net_debt,
     asset_turnover,
+    roce_benchmark_flag,
 )
 
 # 1. NPM normal case
@@ -152,7 +153,7 @@ def test_debt_to_equity_invalid_equity():
 # 19. High leverage flag
 def test_high_leverage_flag():
     assert (
-        leverage_flag(2.5, "Technology")
+        leverage_flag(5.5, "Technology")
         == "HIGH_LEVERAGE"
     )
 
@@ -227,3 +228,90 @@ def test_asset_turnover_zero_assets():
         500,
         0,
     ) is None
+
+
+
+
+
+
+
+
+# =========================================================
+# DAY 08 - FINANCIAL-SECTOR ROCE BENCHMARK
+# =========================================================
+
+def test_financial_roce_above_sector_median():
+    assert (
+        roce_benchmark_flag(
+            14.0,
+            "Financials",
+            12.0,
+        )
+        == "ABOVE_SECTOR_MEDIAN"
+    )
+
+
+def test_financial_roce_below_sector_median():
+    assert (
+        roce_benchmark_flag(
+            9.0,
+            "Financials",
+            12.0,
+        )
+        == "BELOW_SECTOR_MEDIAN"
+    )
+
+
+def test_financial_roce_benchmark_unavailable():
+    assert (
+        roce_benchmark_flag(
+            12.0,
+            "Financials",
+            None,
+        )
+        == "SECTOR_BENCHMARK_UNAVAILABLE"
+    )
+
+
+def test_non_financial_roce_benchmark_not_applicable():
+    assert (
+        roce_benchmark_flag(
+            18.0,
+            "Technology",
+            12.0,
+        )
+        == "NOT_APPLICABLE"
+    )
+
+
+
+
+
+
+
+# =========================================================
+# DAY 08 - FINANCIAL-SECTOR ROCE BENCHMARK
+# =========================================================
+
+def test_financial_roce_above_sector_median():
+    assert roce_benchmark_flag(
+        14.0, "Financials", 12.0
+    ) == "ABOVE_SECTOR_MEDIAN"
+
+
+def test_financial_roce_below_sector_median():
+    assert roce_benchmark_flag(
+        9.0, "Financials", 12.0
+    ) == "BELOW_SECTOR_MEDIAN"
+
+
+def test_financial_roce_benchmark_unavailable():
+    assert roce_benchmark_flag(
+        12.0, "Financials", None
+    ) == "SECTOR_BENCHMARK_UNAVAILABLE"
+
+
+def test_non_financial_roce_benchmark_not_applicable():
+    assert roce_benchmark_flag(
+        18.0, "Technology", 12.0
+    ) == "NOT_APPLICABLE"

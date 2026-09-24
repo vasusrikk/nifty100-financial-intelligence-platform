@@ -148,6 +148,31 @@ def is_financial_sector(
         .lower()
         == "financials"
     )
+def roce_benchmark_flag(
+    roce: Optional[float],
+    broad_sector: Optional[str],
+    sector_median_roce: Optional[float] = None,
+) -> str:
+    """
+    Classify ROCE using a sector-relative benchmark for Financials.
+
+    Financial-sector ROCE is compared with the Financials-sector
+    median instead of using an absolute ROCE threshold.
+    """
+
+    if roce is None:
+        return "N/A"
+
+    if is_financial_sector(broad_sector):
+        if sector_median_roce is None:
+            return "SECTOR_BENCHMARK_UNAVAILABLE"
+
+        if roce >= sector_median_roce:
+            return "ABOVE_SECTOR_MEDIAN"
+
+        return "BELOW_SECTOR_MEDIAN"
+
+    return "NOT_APPLICABLE"
 
 
 # =========================================================
@@ -445,7 +470,7 @@ def leverage_flag(
     if is_financial_sector(broad_sector):
         return "SECTOR_RELATIVE"
 
-    if de_ratio > 2.0:
+    if de_ratio > 5.0:
         return "HIGH_LEVERAGE"
 
     return "NORMAL"

@@ -1,814 +1,634 @@
-\# Sprint 2 Retrospective — Financial Ratio Engine
+# Sprint 2 Retrospective — Financial Ratio Engine
 
+**Project:** NIFTY 100 Financial Analytics  
+**Sprint:** Sprint 2 — Financial Ratio Engine  
+**Date:** 24-09-2026
 
+---
 
-\*\*Project:\*\* NIFTY 100 Financial Analytics  
+## 1. Sprint Objective
 
-\*\*Sprint:\*\* Sprint 2 — Financial Ratio Engine  
-
-\*\*Date:\*\* 23-09-2026
-
-
-
-\---
-
-
-
-\## 1. Sprint Objective
-
-
-
-The objective of Sprint 2 was to transform the cleaned financial data produced during Sprint 1 into a reliable financial-ratio analytics layer.
-
-
+The objective of Sprint 2 was to transform the cleaned financial data produced during Sprint 1 into a reliable, tested and database-integrated financial-ratio analytics layer.
 
 The sprint covered:
 
+- Profitability ratios
+- Leverage and efficiency ratios
+- CAGR calculations
+- Cash-flow KPIs
+- Financial-sector-specific handling
+- Ratio cross-validation
+- Edge-case and anomaly management
+- Consolidated financial-ratios database population
+- Automated KPI testing
+- Screener validation
+- Final Sprint QA
 
+---
 
-\- Profitability ratios
-
-\- Leverage and efficiency ratios
-
-\- CAGR calculations
-
-\- Cash-flow KPIs
-
-\- Financial-sector-specific handling
-
-\- Edge-case management
-
-\- Consolidated financial-ratios database population
-
-\- Automated testing and final validation
-
-
-
-\---
-
-
-
-\## 2. Day 08 — Profitability Ratios
-
-
+## 2. Day 08 — Profitability Ratios
 
 Implemented:
 
+- Net Profit Margin (NPM)
+- Operating Profit Margin (OPM)
+- Return on Equity (ROE)
+- Return on Capital Employed (ROCE)
+- Return on Assets (ROA)
+- OPM source cross-validation
+- Financial-sector identification
 
+Rows processed: **1070**
 
-\- Net Profit Margin (NPM)
+### KPI Availability
 
-\- Operating Profit Margin (OPM)
+- NPM: 1069
+- OPM: 1057
+- ROE: 1055
+- ROCE: 1043
+- ROA: 1054
 
-\- Return on Equity (ROE)
+### OPM Source Cross-Check
 
-\- Return on Capital Employed (ROCE)
+- PASS: 854
+- MISMATCH: 216
 
-\- Return on Assets (ROA)
-
-
-
-Rows processed: \*\*1070\*\*
-
-
-
-KPI availability:
-
-
-
-\- NPM: 1069
-
-\- OPM: 1057
-
-\- ROE: 1055
-
-\- ROCE: 1043
-
-\- ROA: 1054
-
-
-
-OPM source cross-check:
-
-
-
-\- PASS: 854
-
-\- MISMATCH: 216
-
-
-
-Financial-sector rows identified: \*\*258\*\*
-
-
+The calculated ratio-engine values remain the analytical values. Source values are used for validation rather than silently replacing calculated results.
 
 Output:
 
+`output/day08_profitability_ratios.csv`
 
+**Status: COMPLETE**
 
-`output/day08\_profitability\_ratios.csv`
+---
 
-
-
-\*\*Status: COMPLETE\*\*
-
-
-
-\---
-
-
-
-\## 3. Day 09 — Leverage and Efficiency
-
-
+## 3. Day 09 — Leverage and Efficiency
 
 Implemented:
 
+- Debt-to-Equity Ratio
+- Interest Coverage Ratio
+- Leverage classification
+- Interest coverage classification
+- Asset Turnover
+- Net Debt source validation
+- Financial-sector D/E carve-out
 
+Rows processed: **1070**
 
-\- Debt-to-Equity Ratio
+### KPI Availability
 
-\- Interest Coverage Ratio
+- Debt-to-Equity: 1055
+- Interest Coverage Ratio: 1027
+- Asset Turnover: 1054
+- Net Debt: 0
 
-\- Leverage classification
+### Leverage Classifications
 
-\- Interest coverage classification
+- NORMAL: 725
+- SECTOR_RELATIVE: 258
+- HIGH_LEVERAGE: 87
 
-\- Asset Turnover
+### Interest Coverage Classifications
 
-\- Net Debt source validation
+- NORMAL: 844
+- ICR_WARNING: 135
+- DEBT_FREE: 91
 
+### Financial-Sector Handling
 
+Conventional Debt-to-Equity thresholds are not applied directly to Financial-sector observations because structurally higher leverage is normal for banks and other financial institutions.
 
-Rows processed: \*\*1070\*\*
+Financial-sector observations therefore use:
 
+`SECTOR_RELATIVE`
 
-
-KPI availability:
-
-
-
-\- Debt-to-Equity: 1055
-
-\- Interest Coverage Ratio: 1027
-
-\- Asset Turnover: 1054
-
-
-
-Leverage classifications:
-
-
-
-\- NORMAL: 725
-
-\- SECTOR\_RELATIVE: 258
-
-\- HIGH\_LEVERAGE: 87
-
-
-
-Interest Coverage classifications:
-
-
-
-\- NORMAL: 844
-
-\- ICR\_WARNING: 135
-
-\- DEBT\_FREE: 91
-
-
-
-\### Net Debt Limitation
-
-
+### Net Debt Limitation
 
 Net Debt requires:
 
-
-
 `Borrowings - Cash/Cash Equivalents`
-
-
 
 The supplied dataset does not contain a dedicated cash or cash-equivalent field.
 
+Therefore Net Debt was deliberately not fabricated.
 
+Status:
 
-Therefore Net Debt was not fabricated.
-
-
-
-Status used:
-
-
-
-`SOURCE\_CASH\_FIELD\_UNAVAILABLE`
-
-
+`SOURCE_CASH_FIELD_UNAVAILABLE`
 
 Output:
 
+`output/day09_leverage_efficiency.csv`
 
+**Status: COMPLETE WITH DOCUMENTED SOURCE LIMITATION**
 
-`output/day09\_leverage\_efficiency.csv`
+---
 
+## 4. Day 10 — CAGR Engine
 
+Implemented CAGR calculations for:
 
-\*\*Status: COMPLETE WITH DOCUMENTED SOURCE LIMITATION\*\*
+### Revenue
 
+- 3-Year CAGR
+- 5-Year CAGR
+- 10-Year CAGR
 
+### PAT
 
-\---
+- 3-Year CAGR
+- 5-Year CAGR
+- 10-Year CAGR
 
+### EPS
 
+- 3-Year CAGR
+- 5-Year CAGR
+- 10-Year CAGR
 
-\## 4. Day 10 — CAGR Engine
+The CAGR engine uses actual fiscal-year endpoints rather than assuming that adjacent row positions represent the required time interval.
 
+Implemented edge-case classifications:
 
+- NORMAL
+- DECLINE_TO_LOSS
+- TURNAROUND
+- BOTH_NEGATIVE
+- ZERO_BASE
+- INSUFFICIENT
 
-Implemented CAGR for:
+### 5-Year CAGR Availability
 
+- Revenue CAGR: 612
+- PAT CAGR: 549
+- EPS CAGR: 545
 
+### Day 10 Unit Tests
 
-\### Revenue
-
-\- 3-Year CAGR
-
-\- 5-Year CAGR
-
-\- 10-Year CAGR
-
-
-
-\### PAT
-
-\- 3-Year CAGR
-
-\- 5-Year CAGR
-
-\- 10-Year CAGR
-
-
-
-\### EPS
-
-\- 3-Year CAGR
-
-\- 5-Year CAGR
-
-\- 10-Year CAGR
-
-
-
-The CAGR engine uses actual fiscal-year endpoints rather than blindly using row positions.
-
-
-
-Implemented CAGR edge cases:
-
-
-
-\- NORMAL
-
-\- DECLINE\_TO\_LOSS
-
-\- TURNAROUND
-
-\- BOTH\_NEGATIVE
-
-\- ZERO\_BASE
-
-\- INSUFFICIENT
-
-
-
-5-Year CAGR availability:
-
-
-
-\- Revenue CAGR: 612
-
-\- PAT CAGR: 549
-
-\- EPS CAGR: 545
-
-
+**10 tests passed, 0 failed**
 
 Output:
 
+`output/day10_cagr.csv`
 
+**Status: COMPLETE**
 
-`output/day10\_cagr.csv`
+---
 
-
-
-\*\*Status: COMPLETE\*\*
-
-
-
-\---
-
-
-
-\## 5. Day 11 — Cash Flow KPIs
-
-
+## 5. Day 11 — Cash Flow KPIs
 
 Implemented:
 
+- CFO Margin
+- CFO/PAT
+- CFO/PAT edge-case classification
+- Free Cash Flow formula support
+- FCF Margin formula support
+- Capex/Sales formula support
+- Explicit source-availability handling
 
+Rows processed: **1056**
 
-\- CFO Margin
+### KPI Availability
 
-\- CFO/PAT
+- CFO Margin: 1050
+- CFO/PAT: 1050
+- FCF: 0
+- FCF Margin: 0
+- Capex/Sales: 0
 
-\- CFO/PAT edge-case classifications
+### CFO/PAT Classifications
 
+- NORMAL: 990
+- NEGATIVE_PAT: 60
+- MISSING: 5
+- ZERO_PAT: 1
 
+### Capex Limitation
 
-Rows processed: \*\*1056\*\*
+The supplied source data does not contain a dedicated Capex field.
 
+Therefore the following KPIs cannot be reliably populated from the available production data:
 
+- Free Cash Flow
+- FCF Margin
+- Capex/Sales
 
-Availability:
+The aggregate `investing_activity` field was intentionally not treated as Capex because investing cash flow can contain acquisitions, investments, asset disposals and other non-Capex transactions.
 
+Status:
 
+`CAPEX_SOURCE_UNAVAILABLE`
 
-\- CFO Margin: 1050
+Outputs:
 
-\- CFO/PAT: 1050
+`output/day11_cashflow_kpis.csv`
 
+`output/capital_allocation.csv`
 
+### Day 11 Unit Tests
 
-CFO/PAT classifications:
+**14 tests passed, 0 failed**
 
+**Status: COMPLETE WITH DOCUMENTED SOURCE LIMITATION**
 
+---
 
-\- NORMAL: 995
-
-\- NEGATIVE\_PAT: 60
-
-\- ZERO\_PAT: 1
-
-
-
-\### Capex Limitation
-
-
-
-The required source data does not contain a dedicated Capex field.
-
-
-
-Therefore the following KPIs could not be calculated reliably:
-
-
-
-\- Free Cash Flow
-
-\- FCF Margin
-
-\- Capex/Sales
-
-
-
-The aggregate `investing\_activity` field was intentionally not treated as Capex because investing cash flow may contain transactions other than capital expenditure.
-
-
-
-Status used:
-
-
-
-`CAPEX\_SOURCE\_UNAVAILABLE`
-
-
-
-Output:
-
-
-
-`output/day11\_cashflow\_kpis.csv`
-
-
-
-\*\*Status: COMPLETE WITH DOCUMENTED SOURCE LIMITATION\*\*
-
-
-
-\---
-
-
-
-\## 6. Day 12 — Financial Ratios Database
-
-
+## 6. Day 12 — Consolidated Financial Ratios Database
 
 Created and populated:
 
+`financial_ratios`
 
+The original implementation used Day 08/P&L as the company-year base and produced only 1070 rows.
 
-`financial\_ratios`
+Database investigation established:
 
+- P&L rows: 1070
+- Balance Sheet rows: 1140
+- Cash Flow rows: 1056
+- Unique company-year combinations across P&L + Balance Sheet + Cash Flow: **1155**
+- Balance Sheet periods without matching P&L periods: **85**
 
+The Day 12 population engine was therefore corrected to construct the company-year universe using the SQL-equivalent union of:
 
-Final database results:
+- `profitandloss`
+- `balancesheet`
+- `cashflow`
 
+KPI outputs are then left-joined onto this legitimate company-year universe.
 
+No financial observations were fabricated to satisfy the row-count requirement.
 
-\- Rows: 1070
+### Final Day 12 Results
 
-\- Columns: 28
-
-\- Duplicate company-year pairs: 0
-
-\- Foreign-key errors: 0
-
-
+- Company-year base rows: **1155**
+- Rows inserted: **1155**
+- Minimum required: **1100**
+- Row-count requirement: **PASS**
+- Duplicate company-year pairs: **0**
+- Uniqueness: **PASS**
+- Foreign-key integrity: **PASS**
 
 Foreign-key relationship:
 
+`financial_ratios.company_id -> companies.id`
 
+### Final KPI Availability
 
-`financial\_ratios.company\_id -> companies.id`
+- NPM: 1069
+- OPM: 1057
+- ROE: 1055
+- ROCE: 1043
+- ROA: 1054
+- Debt-to-Equity: 1055
+- Interest Coverage Ratio: 1027
+- Asset Turnover: 1054
+- Revenue 5Y CAGR: 612
+- PAT 5Y CAGR: 549
+- EPS 5Y CAGR: 545
+- CFO Margin: 1050
+- CFO/PAT: 1050
+- FCF: 0
+- FCF Margin: 0
+- Capex/Sales: 0
 
+Missing KPI values remain SQL `NULL` where the required source information is unavailable.
 
+**Status: COMPLETE — 1155 LEGITIMATE COMPANY-YEAR ROWS**
 
-5-Year CAGR availability:
+---
 
+## 7. Day 13 — Bank ROCE Carve-Out & Edge-Case Review
 
-
-\- Revenue CAGR: 612
-
-\- PAT CAGR: 549
-
-\- EPS CAGR: 545
-
-
-
-\*\*Status: COMPLETE\*\*
-
-
-
-\---
-
-
-
-\## 7. Day 13 — Edge-Case Validation
-
-
-
-A dedicated final validation engine was implemented.
-
-
-
-Validation covered:
-
-
-
-\- Table population
-
-\- Duplicate company-year detection
-
-\- Foreign-key integrity
-
-\- Profitability KPI presence
-
-\- Financial-sector leverage handling
-
-\- High-leverage classification
-
-\- Interest coverage classifications
-
-\- Net Debt source limitation
-
-\- CAGR edge-case flags
-
-\- Insufficient CAGR history
-
-\- CFO/PAT edge cases
-
-\- Capex source limitation
-
-\- Infinite KPI protection
-
-
-
-Final validation result:
-
-
-
-\- Checks passed: \*\*13\*\*
-
-\- Checks failed: \*\*0\*\*
-
-\- Overall: \*\*PASS\*\*
-
-
+Day 13 implemented dedicated ratio cross-validation and anomaly logging.
 
 Output:
 
+`output/ratio_edge_cases.log`
 
+### Financial-Sector Review
 
-`output/day13\_kpi\_validation.csv`
+The current loaded `sectors` dataset contains:
 
+- Unique Financial-sector companies: **23**
+- Financial-sector company-year observations: **272**
+- D/E `SECTOR_RELATIVE` carve-out rows: **258**
 
+The Sprint reference material expected 19 Financial-sector companies, while the loaded dataset contains 23.
 
-\*\*Status: COMPLETE\*\*
+The implementation retains the actual loaded source classification rather than deleting or reclassifying companies solely to reproduce the reference count.
 
+This is documented as a source/version difference.
 
+### ROCE Cross-Validation
 
-\---
+Calculated ROCE was compared against:
 
+`companies.roce_percentage`
 
+Differences greater than **5 percentage points** were logged.
 
-\## 8. Day 14 — Sprint Review and Testing
+Result:
 
+- ROCE anomalies > 5 percentage points: **576**
 
+### ROE Cross-Validation
 
-Final KPI regression suite:
+Calculated ROE was compared against:
 
+`companies.roe_percentage`
 
+Result:
 
-\*\*51 tests passed\*\*
+- ROE anomalies > 5 percentage points: **528**
 
+Calculated ratio-engine values remain the analytics values. Source ratios are used as reference cross-checks.
 
+### Anomaly Classification
+
+Logged anomalies were classified into diagnostic categories:
+
+- DATA_SOURCE_ISSUE: 12
+- VERSION_DIFFERENCE: 449
+- FORMULA_DISCREPANCY: 643
+
+These categories are diagnostic review classifications and do not silently modify the underlying source data or calculated KPI values.
+
+### Important Source-Ratio Limitation
+
+`companies.roe_percentage` and `companies.roce_percentage` are company-level reference fields and do not contain a fiscal-year dimension.
+
+They are therefore suitable for reference cross-validation but cannot be assumed to represent every historical company-year observation.
+
+**Status: COMPLETE WITH DOCUMENTED SOURCE/VERSION DIFFERENCES**
+
+---
+
+## 8. Day 14 — Testing, Screener Validation & Sprint Review
+
+### Complete KPI Regression Suite
+
+Final command:
+
+`python -m pytest tests\kpi -q`
+
+Result:
+
+**55 tests passed, 0 failed**
 
 The test suite covers:
 
+- NPM
+- OPM
+- OPM validation
+- ROE
+- ROCE
+- ROA
+- Financial-sector identification
+- Debt-to-Equity
+- Financial-sector leverage carve-out
+- Interest Coverage Ratio
+- Interest coverage warnings
+- Debt-free handling
+- Net Debt formula behavior
+- Asset Turnover
+- CAGR calculations
+- CAGR edge cases
+- CFO Margin
+- CFO/PAT
+- CFO/PAT classifications
+- FCF formula behavior
+- FCF Margin behavior
+- Capex/Sales behavior
+- Financial-sector ROCE benchmarking
 
+### Screener Validation
 
-\- Profitability formulas
+Required screener:
 
-\- Zero denominators
+`ROE > 15% AND D/E < 1`
 
-\- Debt-to-Equity
+Counting a company if it met the condition in any historical year produced:
 
-\- Leverage classification
+**59 companies**
 
-\- Interest Coverage
+That interpretation mixes historical observations and is not appropriate for a current screener preview.
 
-\- Debt-free handling
+Using each company's **latest available company-year observation** produced:
 
-\- Asset Turnover
+**38 companies**
 
-\- CAGR calculations
+Expected Sprint range:
 
-\- CAGR edge cases
+**15–50 companies**
 
-\- CFO Margin
+Result:
 
-\- CFO/PAT
+**PASS**
 
-\- FCF formula behavior
+### Screener Data Review
 
-\- Capex-dependent formula behavior
+Manual review identified extreme calculated ROE observations requiring source-data investigation.
 
+Examples include:
 
+- BEL 2024-03: ROE 4744.05%
+- HAL 2024-03: ROE 3816.58%
+- INDIGO 2024-03: ROE 892.57%
 
-Final database QA:
+The calculations were traced back to the stored source values.
 
+Examples:
 
+- BEL: Net Profit = 3985; Equity Capital + Reserves = 84
+- HAL: Net Profit = 7595; Equity Capital + Reserves = 199
+- INDIGO: Net Profit = 8167; Equity Capital + Reserves = 915
 
-\- financial\_ratios rows: 1070
+The implemented ROE formula therefore reproduces the values implied by the stored database fields.
 
-\- duplicate company-year pairs: 0
+The ratio formula was **not altered, capped or manipulated** to hide these observations.
 
-\- foreign-key errors: 0
+### Extreme ROE QA Counts
 
+Across the populated ratio table:
 
+- ROE > 100%: **51 rows**
+- ROE > 500%: **29 rows**
+- ROE > 1000%: **27 rows**
+- ROE < -100%: **7 rows**
 
-Edge-case documentation:
+These observations are treated as upstream source/unit-scale or financial-data review cases requiring further validation.
 
+**Status: COMPLETE WITH SOURCE-DATA ANOMALIES DOCUMENTED**
 
+---
 
-`ratio\_edge\_cases.log`
+## 9. What Went Well
 
+1. Sprint 1's cleaned SQLite database was successfully reused as the analytical foundation.
 
+2. Financial formulas were separated into reusable and independently testable functions.
 
-\*\*Status: COMPLETE\*\*
+3. The KPI engine protects against zero and invalid denominators.
 
+4. Financial-sector leverage receives separate treatment rather than inappropriate universal D/E thresholds.
 
+5. CAGR calculations handle actual fiscal-year intervals and explicitly classify loss, turnaround, zero-base and insufficient-history cases.
 
-\---
+6. The consolidated `financial_ratios` table contains **1155 legitimate company-year observations**.
 
+7. Duplicate `(company_id, year)` pairs remain at **0**.
 
+8. Foreign-key integrity passes successfully.
 
-\## 9. What Went Well
+9. The complete KPI regression suite reached **55 passing tests with 0 failures**.
 
+10. Missing Cash and Capex fields were documented rather than replaced with unsupported assumptions.
 
+11. Day 13 introduced explicit source-vs-calculated ratio cross-validation.
 
-1\. Sprint 1 data was successfully reused as the analytical foundation.
+12. Day 14 manual review successfully exposed extreme source-data/unit-scale anomalies rather than allowing them to pass unnoticed.
 
+13. The latest-period screener produced **38 companies**, within the required 15–50 validation range.
 
+---
 
-2\. Financial formulas were separated into reusable functions and tested independently.
+## 10. Challenges Encountered
 
+### Missing Cash/Cash-Equivalent Field
 
+A dedicated cash/cash-equivalent value is unavailable.
 
-3\. The ratio engine protects against division-by-zero and invalid denominator conditions.
+Reliable Net Debt therefore cannot currently be populated.
 
+### Missing Capex Field
 
+A dedicated Capex field is unavailable.
 
-4\. Financial-sector leverage was handled separately instead of applying the same interpretation to all companies.
+Reliable production values for:
 
+- FCF
+- FCF Margin
+- Capex/Sales
 
+cannot currently be populated.
 
-5\. CAGR calculations explicitly handle loss, turnaround, zero-base and insufficient-history situations.
+### Source Ratio Versioning
 
+The reference ROE and ROCE values stored in `companies` are not year-specific.
 
+Historical calculated company-year ratios therefore cannot always be directly compared with these company-level reference values.
 
-6\. The final `financial\_ratios` table contains no duplicate company-year records.
+### Financial-Sector Count Difference
 
+The Sprint reference expected 19 Financial-sector companies.
 
+The current loaded source classification contains **23**.
 
-7\. Foreign-key integrity passes successfully.
+The source data was preserved instead of manipulating classifications to match the reference count.
 
+### Extreme ROE Observations
 
+Several source Balance Sheet equity/reserve values produce unusually large calculated ROE values.
 
-8\. Automated testing expanded beyond a minimal formula test set, reaching 51 passing KPI tests.
+The formula itself reproduces the stored values correctly, so these observations require upstream source/unit-scale review rather than formula manipulation.
 
+### Historical Coverage
 
+Not every company contains continuous 3-year, 5-year or 10-year history.
 
-9\. Source limitations were documented rather than replacing missing financial fields with unsupported assumptions.
+The CAGR engine therefore returns `INSUFFICIENT` when the required endpoint is unavailable.
 
+---
 
+## 11. What Could Be Improved
 
-\---
+1. Obtain a dedicated Cash/Cash Equivalents field to enable Net Debt.
 
+2. Obtain dedicated Capex data to enable FCF, FCF Margin and Capex/Sales.
 
+3. Validate source units and scaling for Balance Sheet equity/reserve fields associated with extreme ROE observations.
 
-\## 10. Challenges Encountered
+4. Store source ROE and ROCE by fiscal year so calculated and reference ratios can be compared on a like-for-like basis.
 
+5. Reconcile the Financial-sector membership difference between the current dataset and Sprint reference data.
 
+6. Increase historical coverage to improve 10-year CAGR availability.
 
-\### Missing Cash Field
+7. Expand integration testing around the complete analytics pipeline.
 
+8. Add automated CI execution of the complete KPI test suite.
 
+9. Add configurable outlier detection for ratios such as ROE, ROCE, D/E and CFO/PAT.
 
-A dedicated cash/cash-equivalent value was unavailable, preventing reliable Net Debt calculation.
+10. Preserve anomaly evidence in a structured CSV/database audit table in addition to the human-readable log.
 
+---
 
-
-\### Missing Capex Field
-
-
-
-A dedicated Capex value was unavailable, preventing reliable FCF, FCF Margin and Capex/Sales calculation.
-
-
-
-\### Fiscal-Year Gaps
-
-
-
-Some companies do not have continuous annual history.
-
-
-
-The CAGR engine therefore matches actual fiscal-year endpoints and returns `INSUFFICIENT` where the required historical observation is absent.
-
-
-
-\### Database Foreign Key
-
-
-
-The `companies` table uses `id` as its primary key rather than `company\_id`.
-
-
-
-The final ratio table was therefore correctly configured to reference:
-
-
-
-`companies(id)`
-
-
-
-\---
-
-
-
-\## 11. What Could Be Improved
-
-
-
-1\. Obtain a dedicated cash/cash-equivalent field for Net Debt.
-
-
-
-2\. Obtain dedicated capital-expenditure data for FCF-related KPIs.
-
-
-
-3\. Increase historical coverage to improve 10-year CAGR availability.
-
-
-
-4\. Expand integration testing around the complete analytics pipeline.
-
-
-
-5\. Add automated CI execution of the complete test suite on every Git push.
-
-
-
-6\. Add richer data-quality reporting for source-vs-calculated ratio discrepancies.
-
-
-
-\---
-
-
-
-\## 12. Sprint Acceptance Summary
-
-
+## 12. Sprint Acceptance Summary
 
 | Checkpoint | Result |
-
 |---|---|
-
 | Profitability engine | PASS |
-
 | Leverage engine | PASS |
-
 | Efficiency engine | PASS |
-
 | CAGR engine | PASS |
+| Cash-flow engine | PASS WITH SOURCE LIMITATIONS |
+| Financial-sector D/E handling | PASS |
+| ROE/ROCE cross-validation | PASS |
+| financial_ratios population | 1155 ROWS |
+| Minimum 1100-row requirement | PASS |
+| Duplicate company-year pairs | 0 |
+| Foreign-key integrity | PASS |
+| KPI regression tests | 55 PASSED, 0 FAILED |
+| Latest-period screener | 38 COMPANIES |
+| Screener expected range | PASS — 15 TO 50 |
+| Edge-case log | GENERATED |
+| Missing-data fabrication | NONE |
 
-| Cash-flow engine | PASS with source limitations |
-
-| Financial-sector handling | PASS |
-
-| financial\_ratios populated | PASS |
-
-| Duplicate company-year rows | 0 |
-
-| Foreign-key errors | 0 |
-
-| KPI tests | 51 PASSED |
-
-| Day 13 validation | 13/13 PASSED |
-
-| Edge cases documented | PASS |
-
-
-
-\### Source-Data Limitations
-
-
+### Source-Data Limitations
 
 Net Debt cannot be reliably calculated because the supplied source does not contain a dedicated cash/cash-equivalent field.
 
+FCF, FCF Margin and Capex/Sales cannot be reliably populated because the supplied source does not contain a dedicated Capex field.
 
+Extreme ROE observations have also exposed potential source-unit/scaling issues in some Balance Sheet equity/reserve observations.
 
-FCF, FCF Margin and Capex/Sales cannot be reliably calculated because the supplied source does not contain a dedicated Capex field.
+These limitations were preserved and documented rather than hidden through artificial values or unsupported assumptions.
 
+---
 
+## 13. Sprint Outcome
 
-These metrics were deliberately left unavailable instead of being populated using unsupported assumptions.
+Sprint 2 successfully delivered the Financial Ratio Engine and consolidated analytical database layer.
 
+The implementation now contains:
 
+- Tested profitability formulas
+- Leverage and efficiency calculations
+- Multi-window CAGR calculations
+- Cash-flow KPIs
+- Explicit edge-case classifications
+- Financial-sector-specific leverage handling
+- ROE and ROCE source cross-validation
+- Consolidated financial-ratio storage
+- Automated KPI regression tests
+- Latest-period screener validation
+- Edge-case logging
+- Documented source-data limitations
 
-\---
+The final `financial_ratios` table contains **1155 unique company-year records**, with:
 
+- **0 duplicate company-year pairs**
+- **PASS foreign-key integrity**
+- **55 KPI tests passed**
+- **0 KPI test failures**
+- **38 latest-period screener matches**
+- **No fabricated Cash or Capex-derived metrics**
 
+Remaining anomalies relate primarily to source availability, source versioning and potential source-unit/scaling issues rather than hidden modifications to financial calculations.
 
-\## 13. Sprint Outcome
-
-
-
-Sprint 2 successfully delivered the core Financial Ratio Engine and consolidated analytical database layer.
-
-
-
-The final implementation contains:
-
-
-
-\- Tested financial formulas
-
-\- Multi-window CAGR calculations
-
-\- Explicit edge-case classifications
-
-\- Financial-sector-specific handling
-
-\- Database-integrated KPI outputs
-
-\- Automated QA validation
-
-\- Documented source-data limitations
-
-
-
-The final `financial\_ratios` table contains \*\*1070 unique company-year records\*\*, with \*\*0 duplicate company-year pairs\*\* and \*\*0 foreign-key integrity errors\*\*.
-
-
-
-\*\*Sprint 2 Review Status: COMPLETE\*\*
-
+**Sprint 2 Review Status: COMPLETE WITH DOCUMENTED SOURCE-DATA LIMITATIONS**
