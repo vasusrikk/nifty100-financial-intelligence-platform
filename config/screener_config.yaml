@@ -1,0 +1,76 @@
+# Sprint 3 - Day 15
+# NIFTY 100 Screener Configuration
+
+database:
+  path: nifty100.db
+
+screener:
+  latest_period_only: true
+
+financial_sector:
+  broad_sector: Financials
+
+special_rules:
+  financials_de_carveout: true
+  debt_free_icr_pass: true
+
+filters:
+  roe_pct:
+    column: roe_pct
+    source: financial_ratios
+
+  roce_pct:
+    column: roce_pct
+    source: financial_ratios
+
+  npm_pct:
+    column: npm_pct
+    source: financial_ratios
+
+  opm_pct:
+    column: opm_pct
+    source: financial_ratios
+
+  de_ratio:
+    column: de_ratio
+    source: financial_ratios
+
+  icr:
+    column: icr
+    source: financial_ratios
+
+  asset_turnover:
+    column: asset_turnover
+    source: financial_ratios
+
+  revenue_cagr_5yr:
+    column: revenue_cagr_5yr
+    source: financial_ratios
+
+  pat_cagr_5yr:
+    column: pat_cagr_5yr
+    source: financial_ratios
+
+  eps_cagr_5yr:
+    column: eps_cagr_5yr
+    source: financial_ratios
+
+  cfo_margin_pct:
+    column: cfo_margin_pct
+    source: financial_ratios
+
+  pe_ratio:
+    column: pe_ratio
+    source: market_cap
+
+  pb_ratio:
+    column: pb_ratio
+    source: market_cap
+
+  dividend_yield_pct:
+    column: dividend_yield_pct
+    source: market_cap
+
+  market_cap_crore:
+    column: market_cap_crore
+    source: market_cap
