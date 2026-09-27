@@ -23,4 +23,7 @@ Thumbs.db
 .DS_Store
 
 # Logs
-*.logreports/
+*.log
+
+# Generated reports
+reports/
