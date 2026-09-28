@@ -49,16 +49,30 @@ st.caption(
 
 year_data = get_available_ratio_years()
 
-years = year_data[
-    "year"
-].tolist()
+required_years = [
+    "2019-03",
+    "2020-03",
+    "2021-03",
+    "2022-03",
+    "2023-03",
+    "2024-03",
+]
+
+available_years = set(
+    year_data["year"].astype(str)
+)
+
+years = [
+    year
+    for year in required_years
+    if year in available_years
+]
 
 default_year = (
     "2024-03"
     if "2024-03" in years
-    else years[0]
+    else years[-1]
 )
-
 selected_year = st.selectbox(
     "Financial period",
     options=years,

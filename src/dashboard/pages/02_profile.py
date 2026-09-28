@@ -4,12 +4,14 @@ from __future__ import annotations
 
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 import streamlit as st
 
 from src.dashboard.utils.db import (
     get_bs,
     get_cf,
     get_companies,
+    get_generated_pros_cons,
     get_pl,
     get_ratios,
     get_valuation,
@@ -21,6 +23,8 @@ from src.dashboard.utils.db import (
 # ============================================================
 
 def fmt_number(value, decimals=2):
+    """Format a numeric value or return N/A."""
+
     if value is None or pd.isna(value):
         return "N/A"
 
@@ -28,6 +32,8 @@ def fmt_number(value, decimals=2):
 
 
 def fmt_percent(value):
+    """Format a percentage value or return N/A."""
+
     if value is None or pd.isna(value):
         return "N/A"
 
@@ -35,6 +41,8 @@ def fmt_percent(value):
 
 
 def fmt_crore(value):
+    """Format a rupee-crore value or return N/A."""
+
     if value is None or pd.isna(value):
         return "N/A"
 
@@ -42,11 +50,14 @@ def fmt_crore(value):
 
 
 def latest_row(frame):
+    """Return the latest row by financial year."""
+
     if frame is None or frame.empty:
         return None
 
     return (
-        frame.sort_values(
+        frame
+        .sort_values(
             "year",
             ascending=False,
         )
@@ -67,10 +78,17 @@ st.caption(
 
 
 # ============================================================
-# COMPANY SELECTOR
+# COMPANY SEARCH / SELECTOR
 # ============================================================
 
 companies = get_companies().copy()
+
+if companies.empty:
+    st.error(
+        "Company master data is unavailable."
+    )
+    st.stop()
+
 
 companies = companies.sort_values(
     "company_name"
@@ -94,7 +112,7 @@ default_company = (
 )
 
 selected_company = st.selectbox(
-    "Select company",
+    "Search / Select Company",
     options=company_ids,
     index=company_ids.index(
         default_company
@@ -107,7 +125,7 @@ selected_company = st.selectbox(
 
 
 # ============================================================
-# COMPANY MASTER DATA
+# COMPANY CARD
 # ============================================================
 
 company = companies.loc[
@@ -176,6 +194,9 @@ valuation = get_valuation(
     selected_company
 )
 
+generated_insights = get_generated_pros_cons(
+    selected_company
+)
 latest_ratios = latest_row(
     ratios
 )
@@ -198,7 +219,7 @@ latest_valuation = latest_row(
 
 
 # ============================================================
-# LATEST FINANCIAL PERIOD
+# LATEST AVAILABLE PERIOD
 # ============================================================
 
 available_periods = []
@@ -212,6 +233,7 @@ for frame in [
     if (
         frame is not None
         and not frame.empty
+        and "year" in frame.columns
     ):
         available_periods.extend(
             frame["year"]
@@ -221,61 +243,29 @@ for frame in [
         )
 
 if available_periods:
+
     latest_period = max(
         available_periods
     )
 
     st.caption(
-        f"Latest available financial period: "
+        "Latest available financial period: "
         f"{latest_period}"
     )
 
 
 # ============================================================
-# CORE FINANCIAL KPIs
+# REQUIRED SIX KPI TILES
 # ============================================================
 
-st.subheader("Latest Financial Snapshot")
+st.subheader(
+    "Key Financial Metrics"
+)
 
-k1, k2, k3, k4 = st.columns(4)
+k1, k2, k3 = st.columns(3)
 
 with k1:
-    value = (
-        latest_pl["sales"]
-        if latest_pl is not None
-        else None
-    )
 
-    st.metric(
-        "Revenue",
-        fmt_crore(value),
-    )
-
-with k2:
-    value = (
-        latest_pl["net_profit"]
-        if latest_pl is not None
-        else None
-    )
-
-    st.metric(
-        "Net Profit",
-        fmt_crore(value),
-    )
-
-with k3:
-    value = (
-        latest_pl["eps"]
-        if latest_pl is not None
-        else None
-    )
-
-    st.metric(
-        "EPS",
-        fmt_number(value),
-    )
-
-with k4:
     value = (
         latest_valuation[
             "market_cap_crore"
@@ -291,80 +281,12 @@ with k4:
     )
 
 
-# ============================================================
-# PROFITABILITY AND RETURNS
-# ============================================================
+with k2:
 
-st.subheader(
-    "Profitability & Returns"
-)
-
-r1, r2, r3, r4 = st.columns(4)
-
-with r1:
     value = (
-        latest_ratios["roe_pct"]
-        if latest_ratios
-        is not None
-        else None
-    )
-
-    st.metric(
-        "ROE",
-        fmt_percent(value),
-    )
-
-with r2:
-    value = (
-        latest_ratios["roce_pct"]
-        if latest_ratios
-        is not None
-        else None
-    )
-
-    st.metric(
-        "ROCE",
-        fmt_percent(value),
-    )
-
-with r3:
-    value = (
-        latest_ratios["npm_pct"]
-        if latest_ratios
-        is not None
-        else None
-    )
-
-    st.metric(
-        "Net Profit Margin",
-        fmt_percent(value),
-    )
-
-with r4:
-    value = (
-        latest_ratios["de_ratio"]
-        if latest_ratios
-        is not None
-        else None
-    )
-
-    st.metric(
-        "Debt / Equity",
-        fmt_number(value),
-    )
-
-
-# ============================================================
-# VALUATION
-# ============================================================
-
-st.subheader("Valuation")
-
-v1, v2, v3, v4 = st.columns(4)
-
-with v1:
-    value = (
-        latest_valuation["pe_ratio"]
+        latest_valuation[
+            "pe_ratio"
+        ]
         if latest_valuation
         is not None
         else None
@@ -375,59 +297,91 @@ with v1:
         fmt_number(value),
     )
 
-with v2:
+
+with k3:
+
     value = (
-        latest_valuation["pb_ratio"]
-        if latest_valuation
-        is not None
-        else None
-    )
-
-    st.metric(
-        "P/B",
-        fmt_number(value),
-    )
-
-with v3:
-    value = (
-        latest_valuation["ev_ebitda"]
-        if latest_valuation
-        is not None
-        else None
-    )
-
-    st.metric(
-        "EV / EBITDA",
-        fmt_number(value),
-    )
-
-with v4:
-    value = (
-        latest_valuation[
-            "dividend_yield_pct"
+        latest_ratios[
+            "roe_pct"
         ]
-        if latest_valuation
+        if latest_ratios
         is not None
         else None
     )
 
     st.metric(
-        "Dividend Yield",
+        "ROE",
+        fmt_percent(value),
+    )
+
+
+k4, k5, k6 = st.columns(3)
+
+with k4:
+
+    value = (
+        latest_ratios[
+            "roce_pct"
+        ]
+        if latest_ratios
+        is not None
+        else None
+    )
+
+    st.metric(
+        "ROCE",
+        fmt_percent(value),
+    )
+
+
+with k5:
+
+    value = (
+        latest_ratios[
+            "de_ratio"
+        ]
+        if latest_ratios
+        is not None
+        else None
+    )
+
+    st.metric(
+        "D/E",
+        fmt_number(value),
+    )
+
+
+with k6:
+
+    value = (
+        latest_ratios[
+            "revenue_cagr_5yr"
+        ]
+        if latest_ratios
+        is not None
+        else None
+    )
+
+    st.metric(
+        "Revenue CAGR 5yr",
         fmt_percent(value),
     )
 
 
 # ============================================================
-# REVENUE & PROFIT TREND
+# 10-YEAR REVENUE + NET PROFIT BAR CHART
 # ============================================================
 
 st.subheader(
-    "Revenue & Net Profit Trend"
+    "10-Year Revenue & Net Profit"
 )
 
-if not pl.empty:
+if (
+    pl is not None
+    and not pl.empty
+):
 
-    trend = (
+    pl_trend = (
         pl[
             [
                 "year",
@@ -439,129 +393,313 @@ if not pl.empty:
             subset=["year"]
         )
         .sort_values("year")
-        .melt(
+        .tail(10)
+        .copy()
+    )
+
+    if not pl_trend.empty:
+
+        pl_long = pl_trend.melt(
             id_vars="year",
             value_vars=[
                 "sales",
                 "net_profit",
             ],
             var_name="Metric",
-            value_name="₹ Crore",
+            value_name="Value",
         )
-    )
 
-    trend["Metric"] = (
-        trend["Metric"]
-        .replace(
-            {
-                "sales":
-                    "Revenue",
-                "net_profit":
-                    "Net Profit",
-            }
+        pl_long["Metric"] = (
+            pl_long["Metric"]
+            .replace(
+                {
+                    "sales":
+                        "Revenue",
+                    "net_profit":
+                        "Net Profit",
+                }
+            )
         )
-    )
 
-    figure = px.line(
-        trend,
-        x="year",
-        y="₹ Crore",
-        color="Metric",
-        markers=True,
-        title=(
-            "Historical Revenue "
-            "and Net Profit"
-        ),
-    )
+        profit_figure = px.bar(
+            pl_long,
+            x="year",
+            y="Value",
+            color="Metric",
+            barmode="group",
+            labels={
+                "year":
+                    "Financial Period",
+                "Value":
+                    "₹ Crore",
+            },
+            title=(
+                "Revenue and Net Profit "
+                "- Latest 10 Available Years"
+            ),
+        )
 
-    st.plotly_chart(
-        figure,
-        use_container_width=True,
-    )
+        profit_figure.update_layout(
+            xaxis_title=(
+                "Financial Period"
+            ),
+            yaxis_title="₹ Crore",
+            legend_title="Metric",
+        )
+
+        st.plotly_chart(
+            profit_figure,
+            use_container_width=True,
+        )
+
+    else:
+
+        st.info(
+            "Revenue and net-profit "
+            "history is unavailable."
+        )
 
 else:
+
     st.info(
-        "Profit and loss history "
-        "is unavailable."
+        "Revenue and net-profit "
+        "history is unavailable."
     )
 
 
 # ============================================================
-# FINANCIAL RATIOS HISTORY
+# 10-YEAR ROE + ROCE DUAL-AXIS CHART
 # ============================================================
 
 st.subheader(
-    "Financial Ratio Trend"
+    "10-Year ROE & ROCE Trend"
 )
 
-if not ratios.empty:
+if (
+    ratios is not None
+    and not ratios.empty
+):
 
-    ratio_trend = (
+    return_trend = (
         ratios[
             [
                 "year",
                 "roe_pct",
                 "roce_pct",
-                "npm_pct",
             ]
         ]
         .dropna(
             subset=["year"]
         )
         .sort_values("year")
-        .melt(
-            id_vars="year",
-            value_vars=[
-                "roe_pct",
-                "roce_pct",
-                "npm_pct",
-            ],
-            var_name="Metric",
-            value_name="Percent",
+        .tail(10)
+        .copy()
+    )
+
+    if not return_trend.empty:
+
+        return_figure = go.Figure()
+
+        return_figure.add_trace(
+            go.Scatter(
+                x=(
+                    return_trend[
+                        "year"
+                    ]
+                ),
+                y=(
+                    return_trend[
+                        "roe_pct"
+                    ]
+                ),
+                name="ROE",
+                mode="lines+markers",
+                yaxis="y",
+            )
         )
-    )
 
-    ratio_trend["Metric"] = (
-        ratio_trend["Metric"]
-        .replace(
-            {
-                "roe_pct": "ROE",
-                "roce_pct": "ROCE",
-                "npm_pct":
-                    "Net Profit Margin",
-            }
+        return_figure.add_trace(
+            go.Scatter(
+                x=(
+                    return_trend[
+                        "year"
+                    ]
+                ),
+                y=(
+                    return_trend[
+                        "roce_pct"
+                    ]
+                ),
+                name="ROCE",
+                mode="lines+markers",
+                yaxis="y2",
+            )
         )
-    )
 
-    ratio_figure = px.line(
-        ratio_trend,
-        x="year",
-        y="Percent",
-        color="Metric",
-        markers=True,
-        title=(
-            "ROE, ROCE and "
-            "Net Profit Margin"
-        ),
-    )
+        return_figure.update_layout(
+            title=(
+                "ROE and ROCE "
+                "- Latest 10 Available Years"
+            ),
+            xaxis=dict(
+                title=(
+                    "Financial Period"
+                )
+            ),
+            yaxis=dict(
+                title="ROE (%)",
+            ),
+            yaxis2=dict(
+                title="ROCE (%)",
+                overlaying="y",
+                side="right",
+            ),
+            legend=dict(
+                orientation="h",
+            ),
+        )
 
-    st.plotly_chart(
-        ratio_figure,
-        use_container_width=True,
-    )
+        st.plotly_chart(
+            return_figure,
+            use_container_width=True,
+        )
+
+    else:
+
+        st.info(
+            "ROE and ROCE history "
+            "is unavailable."
+        )
 
 else:
+
     st.info(
-        "Financial-ratio history "
+        "ROE and ROCE history "
         "is unavailable."
     )
+
+
+# ============================================================
+# NLP-GENERATED PROS & CONS
+# ============================================================
+
+st.subheader(
+    "Pros & Cons"
+)
+
+st.caption(
+    "Automatically generated from the structured financial "
+    "analysis using the Day 29 NLP rule engine."
+)
+
+pros = []
+cons = []
+
+if (
+    generated_insights is not None
+    and not generated_insights.empty
+):
+
+    # Collect generated Pros from all available
+    # analysis periods for the selected company.
+    for value in (
+        generated_insights["pros"]
+        .dropna()
+        .astype(str)
+    ):
+        for item in value.split("|"):
+            item = item.strip()
+
+            if (
+                item
+                and item not in pros
+            ):
+                pros.append(item)
+
+    # Collect generated Cons from all available
+    # analysis periods for the selected company.
+    for value in (
+        generated_insights["cons"]
+        .dropna()
+        .astype(str)
+    ):
+        for item in value.split("|"):
+            item = item.strip()
+
+            if (
+                item
+                and item not in cons
+            ):
+                cons.append(item)
+
+
+pros_col, cons_col = st.columns(2)
+
+with pros_col:
+
+    st.markdown(
+        "### Pros"
+    )
+
+    if pros:
+
+        for item in pros:
+
+            st.success(
+                f"✓ {item}"
+            )
+
+    else:
+
+        st.info(
+            "No NLP-generated positive "
+            "signals are available for "
+            "this company."
+        )
+
+
+with cons_col:
+
+    st.markdown(
+        "### Cons"
+    )
+
+    if cons:
+
+        for item in cons:
+
+            st.error(
+                f"✗ {item}"
+            )
+
+    else:
+
+        st.info(
+            "No NLP-generated negative "
+            "signals are available for "
+            "this company."
+        )
+
+
+if (
+    generated_insights is None
+    or generated_insights.empty
+):
+
+    st.caption(
+        "Generated analysis is currently unavailable "
+        "for this company."
+    )
+
 
 
 # ============================================================
 # FINANCIAL STATEMENT TABLES
 # ============================================================
 
-st.subheader("Financial Statements")
+st.subheader(
+    "Financial Statements"
+)
 
 tab1, tab2, tab3, tab4 = st.tabs(
     [
@@ -572,13 +710,21 @@ tab1, tab2, tab3, tab4 = st.tabs(
     ]
 )
 
+
 with tab1:
 
-    if pl.empty:
+    if (
+        pl is None
+        or pl.empty
+    ):
+
         st.info(
-            "Profit and loss data unavailable."
+            "Profit and loss "
+            "data unavailable."
         )
+
     else:
+
         st.dataframe(
             pl,
             use_container_width=True,
@@ -588,11 +734,18 @@ with tab1:
 
 with tab2:
 
-    if bs.empty:
+    if (
+        bs is None
+        or bs.empty
+    ):
+
         st.info(
-            "Balance-sheet data unavailable."
+            "Balance-sheet "
+            "data unavailable."
         )
+
     else:
+
         st.dataframe(
             bs,
             use_container_width=True,
@@ -602,11 +755,18 @@ with tab2:
 
 with tab3:
 
-    if cf.empty:
+    if (
+        cf is None
+        or cf.empty
+    ):
+
         st.info(
-            "Cash-flow data unavailable."
+            "Cash-flow data "
+            "unavailable."
         )
+
     else:
+
         st.dataframe(
             cf,
             use_container_width=True,
@@ -616,11 +776,18 @@ with tab3:
 
 with tab4:
 
-    if ratios.empty:
+    if (
+        ratios is None
+        or ratios.empty
+    ):
+
         st.info(
-            "Financial-ratio data unavailable."
+            "Financial-ratio "
+            "data unavailable."
         )
+
     else:
+
         st.dataframe(
             ratios,
             use_container_width=True,
@@ -633,9 +800,8 @@ with tab4:
 # ============================================================
 
 st.caption(
-    "Metrics are displayed from the project's SQLite "
-    "financial dataset. Different financial statements may "
-    "have different latest available periods. Missing source "
-    "values are displayed as unavailable rather than being "
-    "fabricated."
+    "Financial metrics are displayed from the project's "
+    "SQLite dataset. The charts use up to the latest 10 "
+    "available financial periods. Missing source values are "
+    "displayed as N/A rather than being fabricated."
 )

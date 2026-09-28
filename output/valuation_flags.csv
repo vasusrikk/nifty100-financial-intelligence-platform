@@ -1,0 +1,91 @@
+company_id,company_name,broad_sector,sub_sector,market_cap_category,year,market_cap_crore,enterprise_value_crore,pe_ratio,sector_median_pe_ratio,pe_ratio_flag,pb_ratio,sector_median_pb_ratio,pb_ratio_flag,ev_ebitda,sector_median_ev_ebitda,ev_ebitda_flag,dividend_yield_pct,fcf,fcf_yield_pct,fcf_yield_status
+ABB,Abbott India Ltd,Industrials,Capital Goods,Large Cap,2024-03,1536236.24,1619349.16,75.58,47.155,Caution,4.48,7.45,Discount,12.63,22.365,Discount,0.96,,,Unavailable - source FCF absent
+ADANIENSOL,Adani Energy Solutions Ltd,Energy,Power & Utilities,Large Cap,2024-03,348517.36,439276.19,58.5,44.915,In Line,9.05,6.0,Caution,14.83,24.86,Discount,1.65,,,Unavailable - source FCF absent
+ADANIPORTS,"Adani Ports & Special Economic Zone Ltd
+",Industrials,Infrastructure,Large Cap,2024-03,675598.01,611165.74,48.9,47.155,In Line,2.31,7.45,Discount,31.76,22.365,In Line,1.16,,,Unavailable - source FCF absent
+ADANIPOWER,Adani Power Ltd,Energy,Power & Utilities,Large Cap,2024-03,1372183.55,1357949.64,44.57,44.915,In Line,9.91,6.0,Caution,24.76,24.86,In Line,1.65,,,Unavailable - source FCF absent
+APOLLOHOSP,"Apollo Hospitals
+Chain of Indian private hospitals",Healthcare,Healthcare,Large Cap,2024-03,1905622.43,2433382.94,47.72,47.06,In Line,7.68,7.195,In Line,16.74,24.67,Discount,3.22,,,Unavailable - source FCF absent
+ASIANPAINT,"Asian Paints
+Indian Multi-National Paint and Coating Manufacturing Company",Materials,Paints & Coatings,Large Cap,2024-03,2126725.18,2475080.63,73.37,55.62,In Line,3.9,9.21,Discount,23.94,26.58,In Line,2.42,,,Unavailable - source FCF absent
+DMART,Avenue Supermarts Ltd,Consumer Discretionary,Retail,Large Cap,2024-03,3053088.97,3624591.94,72.53,38.005,Caution,11.71,8.065,In Line,36.84,26.455,In Line,1.94,,,Unavailable - source FCF absent
+BAJFINANCE,Bajaj Finance Ltd,Financials,Consumer Finance,Large Cap,2024-03,2473271.58,2632574.41,69.2,34.24,Caution,4.11,6.59,Discount,15.96,23.95,Discount,0.27,,,Unavailable - source FCF absent
+BAJAJFINSV,Bajaj Finserv Ltd,Financials,Diversified Financials,Large Cap,2024-03,1905112.17,1807796.2,15.07,34.24,Discount,6.08,6.59,In Line,39.72,23.95,Caution,2.56,,,Unavailable - source FCF absent
+BANKBARODA,Bank of Baroda,Financials,Public Sector Banks,Large Cap,2024-03,590971.02,656699.32,16.89,34.24,Discount,4.15,6.59,Discount,24.7,23.95,In Line,2.62,,,Unavailable - source FCF absent
+BEL,Bharat Electronics Ltd,Industrials,Defence Electronics,Large Cap,2024-03,1354781.06,1259877.04,17.89,47.155,Discount,9.22,7.45,In Line,23.14,22.365,In Line,0.76,,,Unavailable - source FCF absent
+BHEL,"Bharat Heavy Electricals Limited
+",Industrials,Capital Goods,Large Cap,2024-03,540053.85,682460.17,29.8,47.155,Discount,11.43,7.45,Caution,21.59,22.365,In Line,4.04,,,Unavailable - source FCF absent
+BPCL,Bharat Petroleum Corporation Ltd,Energy,Oil & Gas Refining,Large Cap,2024-03,468662.13,606487.07,68.15,44.915,Caution,0.72,6.0,Discount,26.59,24.86,In Line,1.15,,,Unavailable - source FCF absent
+BHARTIARTL,Bharti Airtel Ltd,Communication Services,Telecommunications,Large Cap,2024-03,378605.83,429972.49,63.78,48.33,In Line,6.28,7.305,In Line,39.71,25.79,Caution,1.02,,,Unavailable - source FCF absent
+BOSCHLTD,Bosch Ltd,Consumer Discretionary,Auto Ancillaries,Large Cap,2024-03,2599556.05,2628370.51,58.43,38.005,Caution,6.47,8.065,In Line,16.07,26.455,Discount,4.23,,,Unavailable - source FCF absent
+BRITANNIA,Britannia Industries Ltd,Consumer Staples,Food Products,Large Cap,2024-03,324745.74,376568.58,63.91,50.95,In Line,4.26,8.07,Discount,33.95,17.19,Caution,1.88,,,Unavailable - source FCF absent
+CANBK,Canara Bank,Financials,Public Sector Banks,Large Cap,2024-03,496415.88,483983.21,36.74,34.24,In Line,12.61,6.59,Caution,25.23,23.95,In Line,3.81,,,Unavailable - source FCF absent
+CHOLAFIN,Cholamandalam Investment & Finance Company Ltd,Financials,Consumer Finance,Large Cap,2024-03,971931.96,1024979.49,16.79,34.24,Discount,10.36,6.59,Caution,13.52,23.95,Discount,2.83,,,Unavailable - source FCF absent
+COALINDIA,Coal India Ltd,Materials,Mining & Metals,Large Cap,2024-03,454024.84,574785.39,34.27,55.62,Discount,14.75,9.21,Caution,25.15,26.58,In Line,4.38,,,Unavailable - source FCF absent
+DLF,DLF Ltd,Real Estate,Real Estate,Large Cap,2024-03,1381712.03,1248409.43,46.26,49.105,In Line,14.32,10.985,In Line,10.41,22.37,Discount,2.58,,,Unavailable - source FCF absent
+DABUR,Dabur India Ltd,Consumer Staples,Personal Products,Large Cap,2024-03,56521.84,67755.32,50.95,50.95,In Line,13.59,8.07,Caution,12.02,17.19,Discount,3.42,,,Unavailable - source FCF absent
+DIVISLAB,Divis Laboratories Ltd,Healthcare,Pharmaceuticals,Large Cap,2024-03,1615028.67,1501836.03,69.95,47.06,In Line,12.34,7.195,Caution,31.81,24.67,In Line,1.39,,,Unavailable - source FCF absent
+DRREDDY,Dr Reddys Laboratories Ltd,Healthcare,Pharmaceuticals,Mid Cap,2024-03,2441803.28,2725256.67,11.73,47.06,Discount,10.19,7.195,In Line,14.56,24.67,Discount,0.09,,,Unavailable - source FCF absent
+EICHERMOT,Eicher Motors Ltd,Consumer Discretionary,Two Wheelers,Large Cap,2024-03,222391.83,234358.89,15.62,38.005,Discount,13.61,8.065,Caution,19.29,26.455,In Line,4.41,,,Unavailable - source FCF absent
+GAIL,GAIL (India) Ltd,Energy,Gas Distribution,Large Cap,2024-03,1531867.57,1613856.89,25.84,44.915,Discount,9.54,6.0,Caution,33.07,24.86,In Line,0.31,,,Unavailable - source FCF absent
+GODREJCP,Godrej Consumer Products Ltd,Consumer Staples,Personal Products,Large Cap,2024-03,1327797.2,1350416.57,33.59,50.95,Discount,8.07,8.07,In Line,23.55,17.19,In Line,3.09,,,Unavailable - source FCF absent
+GRASIM,Grasim Industries Ltd,Industrials,Diversified Industrials,Mid Cap,2024-03,478951.82,601673.21,79.35,47.155,Caution,5.68,7.45,In Line,15.23,22.365,Discount,0.98,,,Unavailable - source FCF absent
+HDFCBANK,HDFC Bank Ltd,Financials,Private Banks,Large Cap,2024-03,808359.03,976938.14,49.42,34.24,In Line,4.4,6.59,Discount,22.54,23.95,In Line,4.33,,,Unavailable - source FCF absent
+HDFCLIFE,HDFC Life Insurance Company Ltd,Financials,Life Insurance,Large Cap,2024-03,47027.6,42921.31,50.59,34.24,In Line,11.28,6.59,Caution,31.63,23.95,In Line,3.22,,,Unavailable - source FCF absent
+HAVELLS,Havells India Ltd,Industrials,Consumer Electricals,Large Cap,2024-03,2521508.87,2620805.22,45.41,47.155,In Line,14.08,7.45,Caution,30.73,22.365,In Line,2.6,,,Unavailable - source FCF absent
+HEROMOTOCO,"Hero MotoCorp Ltd
+",Consumer Discretionary,Two Wheelers,Large Cap,2024-03,1593400.88,1475343.49,53.86,38.005,In Line,12.6,8.065,Caution,28.27,26.455,In Line,1.91,,,Unavailable - source FCF absent
+HAL,Hindustan Aeronautics Ltd,Industrials,Defence & Aerospace,Large Cap,2024-03,2643616.86,3140281.78,71.89,47.155,Caution,3.65,7.45,Discount,8.76,22.365,Discount,2.77,,,Unavailable - source FCF absent
+HINDUNILVR,"Hindustan Unilever Ltd
+",Consumer Staples,FMCG,Mid Cap,2024-03,548890.59,587463.38,34.51,50.95,Discount,11.88,8.07,In Line,7.52,17.19,Discount,4.32,,,Unavailable - source FCF absent
+ICICIBANK,ICICI Bank Ltd,Financials,Private Banks,Large Cap,2024-03,1319221.86,1598760.1,25.76,34.24,In Line,6.2,6.59,In Line,38.28,23.95,Caution,3.43,,,Unavailable - source FCF absent
+ICICIGI,ICICI Lombard General Insurance Company Ltd,Financials,General Insurance,Large Cap,2024-03,1271789.21,1382030.89,49.0,34.24,In Line,7.86,6.59,In Line,36.96,23.95,Caution,3.46,,,Unavailable - source FCF absent
+ICICIPRULI,ICICI Prudential Life Insurance Company Ltd,Financials,Life Insurance,Large Cap,2024-03,1596987.55,2014403.87,20.83,34.24,Discount,12.38,6.59,Caution,22.57,23.95,In Line,0.35,,,Unavailable - source FCF absent
+ITC,"ITC Ltd
+",Consumer Staples,Diversified FMCG,Large Cap,2024-03,332245.58,369131.93,47.85,50.95,In Line,3.24,8.07,Discount,17.19,17.19,In Line,4.26,,,Unavailable - source FCF absent
+IOC,"Indian Oil Corporation
+",Energy,Oil & Gas Refining,Mid Cap,2024-03,1418164.33,1786391.89,28.61,44.915,Discount,4.24,6.0,In Line,33.71,24.86,In Line,1.25,,,Unavailable - source FCF absent
+IRCTC,Indian Railway Catering & Tourism Corporation Ltd,Consumer Discretionary,Travel & Tourism,Mid Cap,2024-03,1258520.29,1473943.68,60.44,38.005,Caution,5.74,8.065,In Line,32.47,26.455,In Line,1.08,,,Unavailable - source FCF absent
+IRFC,Indian Railway Finance Corporation Ltd,Financials,Speciality Finance,Large Cap,2024-03,2618348.58,2449260.08,9.81,34.24,Discount,3.91,6.59,Discount,16.66,23.95,Discount,2.82,,,Unavailable - source FCF absent
+INDUSINDBK,IndusInd Bank Ltd,Financials,Private Banks,Large Cap,2024-03,1807433.12,1674611.06,8.99,34.24,Discount,3.7,6.59,Discount,28.79,23.95,In Line,1.42,,,Unavailable - source FCF absent
+NAUKRI,Info Edge (India) Ltd,Communication Services,Internet & Platforms,Large Cap,2024-03,563824.44,544283.76,32.88,48.33,Discount,8.33,7.305,In Line,11.87,25.79,Discount,4.29,,,Unavailable - source FCF absent
+INFY,Infosys Ltd,Information Technology,IT Services,Large Cap,2024-03,1112279.92,1372029.68,35.99,63.63,Discount,8.97,6.08,In Line,36.7,29.94,In Line,4.1,,,Unavailable - source FCF absent
+INDIGO,Interglobe Aviation Ltd,Consumer Discretionary,Airlines,Large Cap,2024-03,1040632.92,1061542.29,76.23,38.005,Caution,7.87,8.065,In Line,24.64,26.455,In Line,4.27,,,Unavailable - source FCF absent
+JSWENERGY,JSW Energy Ltd,Energy,Power & Utilities,Mid Cap,2024-03,110870.53,124622.6,24.79,44.915,Discount,9.88,6.0,Caution,35.95,24.86,In Line,1.25,,,Unavailable - source FCF absent
+JSWSTEEL,JSW Steel Ltd,Materials,Steel,Large Cap,2024-03,2612646.38,3187328.18,69.27,55.62,In Line,4.37,9.21,Discount,35.49,26.58,In Line,2.94,,,Unavailable - source FCF absent
+JINDALSTEL,Jindal Steel & Power Ltd,Materials,Steel,Large Cap,2024-03,396587.97,478682.44,77.64,55.62,In Line,5.73,9.21,Discount,20.22,26.58,In Line,1.9,,,Unavailable - source FCF absent
+JIOFIN,Jio Financial Services Ltd,Financials,Diversified Financials,Mid Cap,2024-03,1401774.99,1814281.53,34.24,34.24,In Line,9.91,6.59,Caution,26.41,23.95,In Line,3.09,,,Unavailable - source FCF absent
+KOTAKBANK,"Kotak Mahindra Bank Ltd
+",Financials,Private Banks,Large Cap,2024-03,430223.52,548886.13,32.9,34.24,In Line,1.15,6.59,Discount,15.52,23.95,Discount,1.51,,,Unavailable - source FCF absent
+LTIM,LTIMindtree Ltd,Information Technology,IT Services,Large Cap,2024-03,1347046.9,1647384.23,64.52,63.63,In Line,2.38,6.08,Discount,18.9,29.94,Discount,4.43,,,Unavailable - source FCF absent
+LT,Larsen & Toubro Ltd,Industrials,Engineering & Construction,Large Cap,2024-03,1124597.5,1097873.76,30.8,47.155,Discount,2.48,7.45,Discount,16.63,22.365,In Line,1.26,,,Unavailable - source FCF absent
+LICI,Life Insurance Corporation of India,Financials,Life Insurance,Large Cap,2024-03,183583.67,205478.22,30.67,34.24,In Line,8.1,6.59,In Line,12.21,23.95,Discount,3.77,,,Unavailable - source FCF absent
+LODHA,Macrotech Developers Ltd,Real Estate,Real Estate,Large Cap,2024-03,1209919.99,1301112.44,51.95,49.105,In Line,7.65,10.985,Discount,34.33,22.37,Caution,4.05,,,Unavailable - source FCF absent
+M&M,"Mahindra & Mahindra Ltd
+",Consumer Discretionary,Automobiles,Large Cap,2024-03,4173085.48,3837414.39,14.22,38.005,Discount,0.81,8.065,Discount,29.08,26.455,In Line,2.37,,,Unavailable - source FCF absent
+MARUTI,Maruti Suzuki India Ltd,Consumer Discretionary,Automobiles,Mid Cap,2024-03,1503863.63,1891991.87,20.78,38.005,Discount,8.26,8.065,In Line,29.97,26.455,In Line,1.78,,,Unavailable - source FCF absent
+NHPC,"NHPC Ltd
+",Energy,Power & Utilities,Large Cap,2024-03,1740404.25,2103124.81,71.17,44.915,Caution,13.74,6.0,Caution,18.26,24.86,In Line,1.68,,,Unavailable - source FCF absent
+NTPC,NTPC Ltd,Energy,Power & Utilities,Large Cap,2024-03,907823.11,1142814.16,30.8,44.915,Discount,5.24,6.0,In Line,37.12,24.86,In Line,0.06,,,Unavailable - source FCF absent
+NESTLEIND,Nestle India Ltd,Consumer Staples,Food Products,Large Cap,2024-03,1677775.19,1677279.88,54.96,50.95,In Line,14.34,8.07,Caution,15.49,17.19,In Line,3.85,,,Unavailable - source FCF absent
+ONGC,Oil & Natural Gas Corpn Ltd,Energy,Oil & Gas Exploration,Large Cap,2024-03,390111.05,499988.49,18.15,44.915,Discount,10.36,6.0,Caution,11.72,24.86,Discount,1.11,,,Unavailable - source FCF absent
+PIDILITIND,Pidilite Industries Ltd,Materials,Specialty Chemicals,Large Cap,2024-03,162274.18,165749.2,36.12,55.62,Discount,12.3,9.21,In Line,5.36,26.58,Discount,1.01,,,Unavailable - source FCF absent
+PFC,Power Finance Corporation Ltd,Financials,Speciality Finance,Large Cap,2024-03,2011885.81,2014246.29,35.6,34.24,In Line,6.59,6.59,In Line,15.67,23.95,Discount,0.42,,,Unavailable - source FCF absent
+PNB,Punjab National Bank,Financials,Public Sector Banks,Large Cap,2024-03,1825925.6,2365495.49,19.29,34.24,Discount,10.91,6.59,Caution,23.64,23.95,In Line,1.32,,,Unavailable - source FCF absent
+RECLTD,REC Ltd,Financials,Speciality Finance,Large Cap,2024-03,291917.42,315256.49,31.49,34.24,In Line,4.59,6.59,Discount,23.95,23.95,In Line,2.18,,,Unavailable - source FCF absent
+RELIANCE,"Reliance Industries Ltd
+",Energy,Conglomerates,Large Cap,2024-03,432472.71,545039.37,58.34,44.915,In Line,3.25,6.0,Discount,24.96,24.86,In Line,4.21,,,Unavailable - source FCF absent
+SBILIFE,SBI Life Insurance Company Ltd,Financials,Life Insurance,Large Cap,2024-03,886097.71,1097553.71,69.98,34.24,Caution,9.48,6.59,In Line,31.04,23.95,In Line,1.62,,,Unavailable - source FCF absent
+MOTHERSON,Samvardhana Motherson International Ltd,Consumer Discretionary,Auto Ancillaries,Large Cap,2024-03,146151.16,161406.34,9.54,38.005,Discount,2.38,8.065,Discount,33.39,26.455,In Line,2.18,,,Unavailable - source FCF absent
+SHREECEM,Shree Cement Ltd,Materials,Cement,Large Cap,2024-03,3154358.33,2911084.5,25.87,55.62,Discount,1.21,9.21,Discount,26.58,26.58,In Line,3.2,,,Unavailable - source FCF absent
+SHRIRAMFIN,"Shriram Finance Ltd
+",Financials,Consumer Finance,Large Cap,2024-03,868933.47,1098024.4,68.53,34.24,Caution,7.91,6.59,In Line,28.82,23.95,In Line,1.86,,,Unavailable - source FCF absent
+SBIN,State Bank of India,Financials,Public Sector Banks,Large Cap,2024-03,2400436.05,2686824.35,54.93,34.24,Caution,2.72,6.59,Discount,21.53,23.95,In Line,0.42,,,Unavailable - source FCF absent
+TVSMOTOR,TVS Motor Company Ltd,Consumer Discretionary,Two Wheelers,Large Cap,2024-03,266591.41,334973.15,46.1,38.005,In Line,5.62,8.065,Discount,7.1,26.455,Discount,3.07,,,Unavailable - source FCF absent
+TATAMOTORS,Tata Motors Ltd,Consumer Discretionary,Automobiles,Large Cap,2024-03,1504106.64,1588737.42,67.07,38.005,Caution,0.93,8.065,Discount,15.35,26.455,Discount,3.65,,,Unavailable - source FCF absent
+TATAPOWER,"Tata Power Company Ltd
+",Energy,Power & Utilities,Mid Cap,2024-03,1647269.48,1925345.06,14.5,44.915,Discount,3.48,6.0,Discount,12.02,24.86,Discount,0.49,,,Unavailable - source FCF absent
+TECHM,Tech Mahindra Ltd,Information Technology,IT Services,Large Cap,2024-03,3021095.64,3131058.36,57.4,63.63,In Line,7.43,6.08,In Line,7.85,29.94,Discount,0.64,,,Unavailable - source FCF absent
+TITAN,"Titan Company Ltd
+",Consumer Discretionary,Gems & Jewellery,Large Cap,2024-03,1793769.72,2116401.21,10.13,38.005,Discount,10.51,8.065,In Line,21.0,26.455,In Line,3.1,,,Unavailable - source FCF absent
+TRENT,Trent Ltd,Consumer Discretionary,Retail,Large Cap,2024-03,571322.04,566293.08,8.65,38.005,Discount,11.82,8.065,In Line,34.65,26.455,In Line,3.46,,,Unavailable - source FCF absent

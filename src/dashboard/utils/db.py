@@ -699,3 +699,41 @@ def get_stock_prices(company_id):
             connection,
             params=(company_id,),
         )
+
+
+
+
+
+
+
+# ============================================================
+# GENERATED NLP PROS AND CONS
+# ============================================================
+
+@st.cache_data(ttl=CACHE_TTL)
+def get_generated_pros_cons(company_id):
+    """
+    Return NLP-generated Pros and Cons for one company.
+
+    The original prosandcons source table remains untouched.
+    Generated Day 29/30 NLP results are read from the
+    generated_pros_cons table.
+    """
+
+    query = """
+        SELECT
+            id,
+            company_id,
+            pros,
+            cons
+        FROM generated_pros_cons
+        WHERE company_id = ?
+        ORDER BY id
+    """
+
+    with _connect() as connection:
+        return pd.read_sql_query(
+            query,
+            connection,
+            params=(company_id,),
+        )
