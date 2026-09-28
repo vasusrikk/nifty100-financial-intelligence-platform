@@ -398,3 +398,304 @@ def get_documents(ticker):
             connection,
             params=(ticker,),
         )
+
+
+
+
+
+# ============================================================
+# HOME DASHBOARD
+# ============================================================
+
+@st.cache_data(ttl=CACHE_TTL)
+def get_available_ratio_years():
+    """
+    Return available financial-ratio periods with company coverage.
+    """
+
+    query = """
+        SELECT
+            year,
+            COUNT(DISTINCT company_id) AS company_count
+        FROM financial_ratios
+        WHERE year IS NOT NULL
+        GROUP BY year
+        ORDER BY year DESC
+    """
+
+    with _connect() as connection:
+        return pd.read_sql_query(
+            query,
+            connection,
+        )
+
+
+@st.cache_data(ttl=CACHE_TTL)
+def get_home_snapshot(year="2024-03"):
+    """
+    Return one company-level financial snapshot for the Home page.
+
+    Companies remain in the universe even when a particular KPI is
+    unavailable. Missing source values remain NULL.
+    """
+
+    query = """
+        SELECT
+            c.id AS company_id,
+            c.company_name,
+            s.broad_sector,
+            s.sub_sector,
+            s.index_weight_pct,
+            s.market_cap_category,
+
+            fr.year AS ratio_year,
+            fr.roe_pct,
+            fr.roce_pct,
+            fr.npm_pct,
+            fr.de_ratio,
+            fr.icr,
+            fr.revenue_cagr_5yr,
+            fr.pat_cagr_5yr,
+            fr.cfo_margin_pct,
+            fr.fcf,
+            fr.fcf_margin_pct,
+
+            mc.market_cap_crore,
+            mc.enterprise_value_crore,
+            mc.pe_ratio,
+            mc.pb_ratio,
+            mc.ev_ebitda,
+            mc.dividend_yield_pct
+
+        FROM companies c
+
+        LEFT JOIN sectors s
+            ON s.company_id = c.id
+
+        LEFT JOIN financial_ratios fr
+            ON fr.company_id = c.id
+           AND fr.year = ?
+
+        LEFT JOIN market_cap mc
+            ON mc.company_id = c.id
+           AND mc.year = ?
+
+        ORDER BY c.company_name
+    """
+
+    with _connect() as connection:
+        return pd.read_sql_query(
+            query,
+            connection,
+            params=(
+                year,
+                year,
+            ),
+        )
+
+
+@st.cache_data(ttl=CACHE_TTL)
+def get_home_summary(year="2024-03"):
+    """
+    Return the six Home-screen KPIs required by Sprint 4.
+
+    Missing source values are excluded from statistical calculations.
+    Total company count always represents the complete company universe.
+    """
+
+    snapshot = get_home_snapshot(year)
+
+    if snapshot.empty:
+        return {
+            "average_roe": None,
+            "median_pe": None,
+            "median_de": None,
+            "total_companies": 0,
+            "median_revenue_cagr_5yr": None,
+            "debt_free_companies": 0,
+            "ratio_coverage": 0,
+            "market_cap_coverage": 0,
+        }
+
+    def safe_mean(column):
+        values = snapshot[column].dropna()
+
+        if values.empty:
+            return None
+
+        return float(values.mean())
+
+    def safe_median(column):
+        values = snapshot[column].dropna()
+
+        if values.empty:
+            return None
+
+        return float(values.median())
+
+    de_values = snapshot["de_ratio"].dropna()
+
+    debt_free_companies = int(
+        (de_values == 0).sum()
+    )
+
+    return {
+        "average_roe":
+            safe_mean("roe_pct"),
+
+        "median_pe":
+            safe_median("pe_ratio"),
+
+        "median_de":
+            safe_median("de_ratio"),
+
+        "total_companies":
+            int(snapshot["company_id"].nunique()),
+
+        "median_revenue_cagr_5yr":
+            safe_median("revenue_cagr_5yr"),
+
+        "debt_free_companies":
+            debt_free_companies,
+
+        "ratio_coverage":
+            int(snapshot["ratio_year"].notna().sum()),
+
+        "market_cap_coverage":
+            int(snapshot["market_cap_crore"].notna().sum()),
+    }
+
+
+    def safe_median(column):
+        values = snapshot[
+            column
+        ].dropna()
+
+        if values.empty:
+            return None
+
+        return float(
+            values.median()
+        )
+
+    return {
+        "companies":
+            int(
+                snapshot[
+                    "company_id"
+                ].nunique()
+            ),
+        "sectors":
+            int(
+                snapshot[
+                    "broad_sector"
+                ].nunique()
+            ),
+        "ratio_coverage":
+            ratio_coverage,
+        "market_cap_coverage":
+            market_cap_coverage,
+        "median_roe":
+            safe_median(
+                "roe_pct"
+            ),
+        "median_roce":
+            safe_median(
+                "roce_pct"
+            ),
+        "median_de":
+            safe_median(
+                "de_ratio"
+            ),
+        "median_revenue_growth":
+            safe_median(
+                "revenue_cagr_5yr"
+            ),
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ============================================================
+# STOCK PRICE HISTORY
+# ============================================================
+
+@st.cache_data(ttl=CACHE_TTL)
+def get_stock_prices(company_id):
+    """
+    Return historical stock-price data for one company.
+
+    Data is ordered chronologically and source values are
+    returned without fabrication or interpolation.
+    """
+
+    query = """
+        SELECT
+            company_id,
+            date,
+            open_price,
+            high_price,
+            low_price,
+            close_price,
+            volume,
+            adjusted_close
+        FROM stock_prices
+        WHERE company_id = ?
+        ORDER BY date
+    """
+
+    with _connect() as connection:
+        return pd.read_sql_query(
+            query,
+            connection,
+            params=(company_id,),
+        )
