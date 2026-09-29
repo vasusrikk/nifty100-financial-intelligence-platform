@@ -1,0 +1,110 @@
+company_id,company_name,pdf_path,generation_status,pdf_exists,file_size_bytes,pdf_readable,page_count,page_count_valid,validation_status,validation_message
+ABB,Abbott India Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ABB_tearsheet.pdf,PASS,True,172165,True,2,True,PASS,PDF generated and validated.
+ADANIENSOL,Adani Energy Solutions Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ADANIENSOL_tearsheet.pdf,PASS,True,176763,True,2,True,PASS,PDF generated and validated.
+ADANIENT,Adani Enterprises Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ADANIENT_tearsheet.pdf,PASS,True,177732,True,2,True,PASS,PDF generated and validated.
+ADANIGREEN,Adani Green Energy Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ADANIGREEN_tearsheet.pdf,PASS,True,163658,True,2,True,PASS,PDF generated and validated.
+ADANIPORTS,"Adani Ports & Special Economic Zone Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ADANIPORTS_tearsheet.pdf,PASS,True,177321,True,2,True,PASS,PDF generated and validated.
+ADANIPOWER,Adani Power Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ADANIPOWER_tearsheet.pdf,PASS,True,175524,True,2,True,PASS,PDF generated and validated.
+AMBUJACEM,Ambuja Cements Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\AMBUJACEM_tearsheet.pdf,PASS,True,164351,True,2,True,PASS,PDF generated and validated.
+APOLLOHOSP,"Apollo Hospitals
+Chain of Indian private hospitals",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\APOLLOHOSP_tearsheet.pdf,PASS,True,183039,True,2,True,PASS,PDF generated and validated.
+ASIANPAINT,"Asian Paints
+Indian Multi-National Paint and Coating Manufacturing Company",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ASIANPAINT_tearsheet.pdf,PASS,True,179290,True,2,True,PASS,PDF generated and validated.
+ATGL,Adani Total Gas Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ATGL_tearsheet.pdf,PASS,True,153177,True,2,True,PASS,PDF generated and validated.
+AXISBANK,Axis Bank Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\AXISBANK_tearsheet.pdf,PASS,True,186670,True,2,True,PASS,PDF generated and validated.
+BAJAJ-AUTO,Bajaj Auto Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\BAJAJ-AUTO_tearsheet.pdf,PASS,True,174813,True,2,True,PASS,PDF generated and validated.
+BAJAJFINSV,Bajaj Finserv Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\BAJAJFINSV_tearsheet.pdf,PASS,True,178277,True,2,True,PASS,PDF generated and validated.
+BAJAJHLDNG,Bajaj Holdings & Investment Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\BAJAJHLDNG_tearsheet.pdf,PASS,True,174590,True,2,True,PASS,PDF generated and validated.
+BAJFINANCE,Bajaj Finance Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\BAJFINANCE_tearsheet.pdf,PASS,True,180280,True,2,True,PASS,PDF generated and validated.
+BANKBARODA,Bank of Baroda,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\BANKBARODA_tearsheet.pdf,PASS,True,185669,True,2,True,PASS,PDF generated and validated.
+BEL,Bharat Electronics Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\BEL_tearsheet.pdf,PASS,True,183138,True,2,True,PASS,PDF generated and validated.
+BHARTIARTL,Bharti Airtel Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\BHARTIARTL_tearsheet.pdf,PASS,True,168054,True,2,True,PASS,PDF generated and validated.
+BHEL,"Bharat Heavy Electricals Limited
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\BHEL_tearsheet.pdf,PASS,True,177917,True,2,True,PASS,PDF generated and validated.
+BOSCHLTD,Bosch Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\BOSCHLTD_tearsheet.pdf,PASS,True,179929,True,2,True,PASS,PDF generated and validated.
+BPCL,Bharat Petroleum Corporation Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\BPCL_tearsheet.pdf,PASS,True,180612,True,2,True,PASS,PDF generated and validated.
+BRITANNIA,Britannia Industries Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\BRITANNIA_tearsheet.pdf,PASS,True,179194,True,2,True,PASS,PDF generated and validated.
+CANBK,Canara Bank,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\CANBK_tearsheet.pdf,PASS,True,185580,True,2,True,PASS,PDF generated and validated.
+CHOLAFIN,Cholamandalam Investment & Finance Company Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\CHOLAFIN_tearsheet.pdf,PASS,True,179813,True,2,True,PASS,PDF generated and validated.
+CIPLA,"Cipla Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\CIPLA_tearsheet.pdf,PASS,True,179860,True,2,True,PASS,PDF generated and validated.
+COALINDIA,Coal India Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\COALINDIA_tearsheet.pdf,PASS,True,184033,True,2,True,PASS,PDF generated and validated.
+DABUR,Dabur India Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\DABUR_tearsheet.pdf,PASS,True,177467,True,2,True,PASS,PDF generated and validated.
+DIVISLAB,Divis Laboratories Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\DIVISLAB_tearsheet.pdf,PASS,True,177213,True,2,True,PASS,PDF generated and validated.
+DLF,DLF Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\DLF_tearsheet.pdf,PASS,True,176375,True,2,True,PASS,PDF generated and validated.
+DMART,Avenue Supermarts Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\DMART_tearsheet.pdf,PASS,True,175745,True,2,True,PASS,PDF generated and validated.
+DRREDDY,Dr Reddys Laboratories Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\DRREDDY_tearsheet.pdf,PASS,True,173476,True,2,True,PASS,PDF generated and validated.
+EICHERMOT,Eicher Motors Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\EICHERMOT_tearsheet.pdf,PASS,True,170865,True,2,True,PASS,PDF generated and validated.
+GAIL,GAIL (India) Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\GAIL_tearsheet.pdf,PASS,True,185662,True,2,True,PASS,PDF generated and validated.
+GODREJCP,Godrej Consumer Products Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\GODREJCP_tearsheet.pdf,PASS,True,180606,True,2,True,PASS,PDF generated and validated.
+GRASIM,Grasim Industries Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\GRASIM_tearsheet.pdf,PASS,True,177668,True,2,True,PASS,PDF generated and validated.
+HAL,Hindustan Aeronautics Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\HAL_tearsheet.pdf,PASS,True,175848,True,2,True,PASS,PDF generated and validated.
+HAVELLS,Havells India Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\HAVELLS_tearsheet.pdf,PASS,True,184330,True,2,True,PASS,PDF generated and validated.
+HCLTECH,HCL Technologies Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\HCLTECH_tearsheet.pdf,PASS,True,174339,True,2,True,PASS,PDF generated and validated.
+HDFCBANK,HDFC Bank Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\HDFCBANK_tearsheet.pdf,PASS,True,180957,True,2,True,PASS,PDF generated and validated.
+HDFCLIFE,HDFC Life Insurance Company Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\HDFCLIFE_tearsheet.pdf,PASS,True,184124,True,2,True,PASS,PDF generated and validated.
+HEROMOTOCO,"Hero MotoCorp Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\HEROMOTOCO_tearsheet.pdf,PASS,True,178873,True,2,True,PASS,PDF generated and validated.
+HINDALCO,Hindalco Industries Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\HINDALCO_tearsheet.pdf,PASS,True,183359,True,2,True,PASS,PDF generated and validated.
+HINDUNILVR,"Hindustan Unilever Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\HINDUNILVR_tearsheet.pdf,PASS,True,170418,True,2,True,PASS,PDF generated and validated.
+ICICIBANK,ICICI Bank Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ICICIBANK_tearsheet.pdf,PASS,True,179754,True,2,True,PASS,PDF generated and validated.
+ICICIGI,ICICI Lombard General Insurance Company Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ICICIGI_tearsheet.pdf,PASS,True,184510,True,2,True,PASS,PDF generated and validated.
+ICICIPRULI,ICICI Prudential Life Insurance Company Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ICICIPRULI_tearsheet.pdf,PASS,True,179603,True,2,True,PASS,PDF generated and validated.
+INDIGO,Interglobe Aviation Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\INDIGO_tearsheet.pdf,PASS,True,177120,True,2,True,PASS,PDF generated and validated.
+INDUSINDBK,IndusInd Bank Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\INDUSINDBK_tearsheet.pdf,PASS,True,179746,True,2,True,PASS,PDF generated and validated.
+INFY,Infosys Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\INFY_tearsheet.pdf,PASS,True,175858,True,2,True,PASS,PDF generated and validated.
+IOC,"Indian Oil Corporation
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\IOC_tearsheet.pdf,PASS,True,183439,True,2,True,PASS,PDF generated and validated.
+IRCTC,Indian Railway Catering & Tourism Corporation Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\IRCTC_tearsheet.pdf,PASS,True,176398,True,2,True,PASS,PDF generated and validated.
+IRFC,Indian Railway Finance Corporation Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\IRFC_tearsheet.pdf,PASS,True,177550,True,2,True,PASS,PDF generated and validated.
+ITC,"ITC Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ITC_tearsheet.pdf,PASS,True,177577,True,2,True,PASS,PDF generated and validated.
+JINDALSTEL,Jindal Steel & Power Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\JINDALSTEL_tearsheet.pdf,PASS,True,166049,True,2,True,PASS,PDF generated and validated.
+JIOFIN,Jio Financial Services Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\JIOFIN_tearsheet.pdf,PASS,True,118292,True,2,True,PASS,PDF generated and validated.
+JSWENERGY,JSW Energy Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\JSWENERGY_tearsheet.pdf,PASS,True,178304,True,2,True,PASS,PDF generated and validated.
+JSWSTEEL,JSW Steel Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\JSWSTEEL_tearsheet.pdf,PASS,True,183168,True,2,True,PASS,PDF generated and validated.
+KOTAKBANK,"Kotak Mahindra Bank Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\KOTAKBANK_tearsheet.pdf,PASS,True,183829,True,2,True,PASS,PDF generated and validated.
+LICI,Life Insurance Corporation of India,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\LICI_tearsheet.pdf,PASS,True,154685,True,2,True,PASS,PDF generated and validated.
+LODHA,Macrotech Developers Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\LODHA_tearsheet.pdf,PASS,True,181031,True,2,True,PASS,PDF generated and validated.
+LT,Larsen & Toubro Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\LT_tearsheet.pdf,PASS,True,172937,True,2,True,PASS,PDF generated and validated.
+LTIM,LTIMindtree Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\LTIM_tearsheet.pdf,PASS,True,175303,True,2,True,PASS,PDF generated and validated.
+M&M,"Mahindra & Mahindra Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\M&M_tearsheet.pdf,PASS,True,180036,True,2,True,PASS,PDF generated and validated.
+MARUTI,Maruti Suzuki India Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\MARUTI_tearsheet.pdf,PASS,True,178816,True,2,True,PASS,PDF generated and validated.
+MOTHERSON,Samvardhana Motherson International Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\MOTHERSON_tearsheet.pdf,PASS,True,175489,True,2,True,PASS,PDF generated and validated.
+NAUKRI,Info Edge (India) Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\NAUKRI_tearsheet.pdf,PASS,True,166235,True,2,True,PASS,PDF generated and validated.
+NESTLEIND,Nestle India Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\NESTLEIND_tearsheet.pdf,PASS,True,163370,True,2,True,PASS,PDF generated and validated.
+NHPC,"NHPC Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\NHPC_tearsheet.pdf,PASS,True,183071,True,2,True,PASS,PDF generated and validated.
+NTPC,NTPC Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\NTPC_tearsheet.pdf,PASS,True,184567,True,2,True,PASS,PDF generated and validated.
+ONGC,Oil & Natural Gas Corpn Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\ONGC_tearsheet.pdf,PASS,True,187513,True,2,True,PASS,PDF generated and validated.
+PFC,Power Finance Corporation Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\PFC_tearsheet.pdf,PASS,True,181615,True,2,True,PASS,PDF generated and validated.
+PIDILITIND,Pidilite Industries Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\PIDILITIND_tearsheet.pdf,PASS,True,173353,True,2,True,PASS,PDF generated and validated.
+PNB,Punjab National Bank,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\PNB_tearsheet.pdf,PASS,True,170146,True,2,True,PASS,PDF generated and validated.
+POWERGRID,Power Grid Corporation of India Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\POWERGRID_tearsheet.pdf,PASS,True,174985,True,2,True,PASS,PDF generated and validated.
+RECLTD,REC Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\RECLTD_tearsheet.pdf,PASS,True,178905,True,2,True,PASS,PDF generated and validated.
+RELIANCE,"Reliance Industries Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\RELIANCE_tearsheet.pdf,PASS,True,179233,True,2,True,PASS,PDF generated and validated.
+SBILIFE,SBI Life Insurance Company Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\SBILIFE_tearsheet.pdf,PASS,True,172311,True,2,True,PASS,PDF generated and validated.
+SBIN,State Bank of India,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\SBIN_tearsheet.pdf,PASS,True,117264,True,2,True,PASS,PDF generated and validated.
+SHREECEM,Shree Cement Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\SHREECEM_tearsheet.pdf,PASS,True,170743,True,2,True,PASS,PDF generated and validated.
+SHRIRAMFIN,"Shriram Finance Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\SHRIRAMFIN_tearsheet.pdf,PASS,True,175860,True,2,True,PASS,PDF generated and validated.
+SIEMENS,Siemens Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\SIEMENS_tearsheet.pdf,PASS,True,179365,True,2,True,PASS,PDF generated and validated.
+SUNPHARMA,Sun Pharmaceuticals Industries Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\SUNPHARMA_tearsheet.pdf,PASS,True,180474,True,2,True,PASS,PDF generated and validated.
+TATACONSUM,Tata Consumer Products Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\TATACONSUM_tearsheet.pdf,PASS,True,172287,True,2,True,PASS,PDF generated and validated.
+TATAMOTORS,Tata Motors Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\TATAMOTORS_tearsheet.pdf,PASS,True,168185,True,2,True,PASS,PDF generated and validated.
+TATAPOWER,"Tata Power Company Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\TATAPOWER_tearsheet.pdf,PASS,True,178991,True,2,True,PASS,PDF generated and validated.
+TATASTEEL,"Tata Steel Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\TATASTEEL_tearsheet.pdf,PASS,True,174957,True,2,True,PASS,PDF generated and validated.
+TCS,Tata Consultancy Services Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\TCS_tearsheet.pdf,PASS,True,169844,True,2,True,PASS,PDF generated and validated.
+TECHM,Tech Mahindra Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\TECHM_tearsheet.pdf,PASS,True,173943,True,2,True,PASS,PDF generated and validated.
+TITAN,"Titan Company Ltd
+",C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\TITAN_tearsheet.pdf,PASS,True,177202,True,2,True,PASS,PDF generated and validated.
+TORNTPHARM,Torrent Pharmaceuticals Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\TORNTPHARM_tearsheet.pdf,PASS,True,179719,True,2,True,PASS,PDF generated and validated.
+TRENT,Trent Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\TRENT_tearsheet.pdf,PASS,True,168916,True,2,True,PASS,PDF generated and validated.
+TVSMOTOR,TVS Motor Company Ltd,C:\Users\vasus\OneDrive\Desktop\nifty100_project\reports\tearsheets\TVSMOTOR_tearsheet.pdf,PASS,True,176212,True,2,True,PASS,PDF generated and validated.

@@ -713,22 +713,31 @@ def get_stock_prices(company_id):
 @st.cache_data(ttl=CACHE_TTL)
 def get_generated_pros_cons(company_id):
     """
-    Return NLP-generated Pros and Cons for one company.
+    Return structured Day 30 NLP-generated Pros and Cons
+    for one company.
 
     The original prosandcons source table remains untouched.
-    Generated Day 29/30 NLP results are read from the
-    generated_pros_cons table.
     """
 
     query = """
         SELECT
-            id,
             company_id,
-            pros,
-            cons
+            signal_type,
+            rule_id,
+            metric,
+            period,
+            value_pct,
+            message
         FROM generated_pros_cons
         WHERE company_id = ?
-        ORDER BY id
+        ORDER BY
+            CASE
+                WHEN signal_type = 'PRO' THEN 1
+                WHEN signal_type = 'CON' THEN 2
+                ELSE 3
+            END,
+            rule_id,
+            period
     """
 
     with _connect() as connection:

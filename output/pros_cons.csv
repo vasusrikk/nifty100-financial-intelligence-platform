@@ -1,21 +1,81 @@
-id,company_id,pros_count,cons_count,pros,cons,pro_rule_ids,con_rule_ids
-1,HDFCBANK,4,0,Excellent sales growth of 21.00%. | Excellent profit growth of 22.00%. | Healthy stock-price CAGR of 15.00%. | Healthy return on equity of 17.00%.,,"PRO_01, PRO_04, PRO_08, PRO_11",
-10,SBILIFE,4,0,Excellent sales growth of 24.00%. | Positive profit growth of 6.00%. | Positive stock-price CAGR of 8.00%. | Positive return on equity of 14.00%.,,"PRO_01, PRO_06, PRO_09, PRO_12",
-11,SBILIFE,4,0,Healthy sales growth of 17.00%. | Positive profit growth of 9.00%. | Positive stock-price CAGR of 7.00%. | Positive return on equity of 13.00%.,,"PRO_02, PRO_06, PRO_09, PRO_12",
-12,SBILIFE,3,1,Excellent sales growth of 43.00%. | Healthy profit growth of 18.00%. | Positive return on equity of 12.00%.,Stock-price CAGR is negative at -2.00%.,"PRO_01, PRO_05, PRO_12",CON_07
-13,TCS,4,0,Healthy sales growth of 11.00%. | Positive profit growth of 9.00%. | Healthy stock-price CAGR of 14.00%. | Excellent return on equity of 40.00%.,,"PRO_02, PRO_06, PRO_08, PRO_10",
-14,TCS,4,0,Healthy sales growth of 10.00%. | Positive profit growth of 8.00%. | Healthy stock-price CAGR of 16.00%. | Excellent return on equity of 44.00%.,,"PRO_02, PRO_06, PRO_08, PRO_10",
-15,TCS,4,0,Healthy sales growth of 14.00%. | Healthy profit growth of 12.00%. | Positive stock-price CAGR of 8.00%. | Excellent return on equity of 47.00%.,,"PRO_02, PRO_05, PRO_09, PRO_10",
-16,TCS,4,0,Positive sales growth of 5.00%. | Positive profit growth of 8.00%. | Healthy stock-price CAGR of 16.00%. | Excellent return on equity of 52.00%.,,"PRO_03, PRO_06, PRO_08, PRO_10",
-17,WIPRO,3,1,Positive sales growth of 8.00%. | Healthy stock-price CAGR of 12.00%. | Healthy return on equity of 18.00%.,Profit growth is modest at 3.00%.,"PRO_03, PRO_08, PRO_11",CON_06
-18,WIPRO,3,1,Positive sales growth of 9.00%. | Strong stock-price CAGR of 20.00%. | Healthy return on equity of 17.00%.,Profit growth is modest at 4.00%.,"PRO_03, PRO_07, PRO_11",CON_06
-19,WIPRO,2,2,Healthy sales growth of 13.00%. | Healthy return on equity of 17.00%.,Profit growth is weak at 0.00%. | Stock-price CAGR is negative at -1.00%.,"PRO_02, PRO_11","CON_05, CON_07"
-2,HDFCBANK,4,0,Excellent sales growth of 22.00%. | Excellent profit growth of 23.00%. | Positive stock-price CAGR of 8.00%. | Healthy return on equity of 17.00%.,,"PRO_01, PRO_04, PRO_09, PRO_11",
-20,WIPRO,2,2,Strong stock-price CAGR of 39.00%. | Positive return on equity of 14.00%.,Sales contracted by 3.00%. | Profit growth is weak at 1.00%.,"PRO_07, PRO_12","CON_01, CON_05"
-3,HDFCBANK,4,0,Excellent sales growth of 30.00%. | Excellent profit growth of 26.00%. | Positive stock-price CAGR of 8.00%. | Healthy return on equity of 17.00%.,,"PRO_01, PRO_04, PRO_09, PRO_11",
-4,HDFCBANK,4,0,Excellent sales growth of 47.00%. | Excellent profit growth of 27.00%. | Healthy stock-price CAGR of 13.00%. | Healthy return on equity of 17.00%.,,"PRO_01, PRO_04, PRO_08, PRO_11",
-5,INFY,4,0,Healthy sales growth of 12.00%. | Positive profit growth of 9.00%. | Healthy stock-price CAGR of 15.00%. | Excellent return on equity of 27.00%.,,"PRO_02, PRO_06, PRO_08, PRO_10",
-6,INFY,4,0,Healthy sales growth of 13.00%. | Healthy profit growth of 11.00%. | Strong stock-price CAGR of 22.00%. | Excellent return on equity of 29.00%.,,"PRO_02, PRO_05, PRO_07, PRO_10",
-7,INFY,3,1,Positive sales growth of 5.00%. | Healthy profit growth of 10.00%. | Excellent return on equity of 31.00%.,Stock-price CAGR is modest at 4.00%.,"PRO_03, PRO_05, PRO_10",CON_09
-8,INFY,3,1,Positive profit growth of 8.00%. | Strong stock-price CAGR of 27.00%. | Excellent return on equity of 32.00%.,Sales growth is modest at 3.00%.,"PRO_06, PRO_07, PRO_10",CON_03
-9,SBILIFE,4,0,Excellent sales growth of 23.00%. | Positive profit growth of 9.00%. | Positive stock-price CAGR of 9.00%. | Healthy return on equity of 16.00%.,,"PRO_01, PRO_06, PRO_09, PRO_11",
+company_id,signal_type,rule_id,metric,period,value_pct,message
+HDFCBANK,PRO,PRO_01,Revenue CAGR,10 Years,21.0,Excellent revenue growth of 21.00%.
+HDFCBANK,PRO,PRO_04,PAT CAGR,10 Years,22.0,Excellent profit growth of 22.00%.
+HDFCBANK,PRO,PRO_08,Stock Price CAGR,10 Years,15.0,Healthy stock-price CAGR of 15.00%.
+HDFCBANK,PRO,PRO_11,ROE,10 Years,17.0,Healthy return on equity of 17.00%.
+SBILIFE,PRO,PRO_01,Revenue CAGR,5 Years,24.0,Excellent revenue growth of 24.00%.
+SBILIFE,PRO,PRO_06,PAT CAGR,5 Years,6.0,Positive profit growth of 6.00%.
+SBILIFE,PRO,PRO_09,Stock Price CAGR,5 Years,8.0,Positive stock-price CAGR of 8.00%.
+SBILIFE,PRO,PRO_12,ROE,5 Years,14.0,Positive return on equity of 14.00%.
+SBILIFE,PRO,PRO_02,Revenue CAGR,3 Years,17.0,Healthy revenue growth of 17.00%.
+SBILIFE,PRO,PRO_06,PAT CAGR,3 Years,9.0,Positive profit growth of 9.00%.
+SBILIFE,PRO,PRO_09,Stock Price CAGR,3 Years,7.0,Positive stock-price CAGR of 7.00%.
+SBILIFE,PRO,PRO_12,ROE,3 Years,13.0,Positive return on equity of 13.00%.
+SBILIFE,PRO,PRO_01,Revenue CAGR,TTM,43.0,Excellent revenue growth of 43.00%.
+SBILIFE,PRO,PRO_05,PAT CAGR,TTM,18.0,Healthy profit growth of 18.00%.
+SBILIFE,CON,CON_07,Stock Price CAGR,1 Year,-2.0,Stock-price CAGR is negative at -2.00%.
+SBILIFE,PRO,PRO_12,ROE,1 Year,12.0,Positive return on equity of 12.00%.
+TCS,PRO,PRO_02,Revenue CAGR,10 Years,11.0,Healthy revenue growth of 11.00%.
+TCS,PRO,PRO_06,PAT CAGR,10 Years,9.0,Positive profit growth of 9.00%.
+TCS,PRO,PRO_08,Stock Price CAGR,10 Years,14.0,Healthy stock-price CAGR of 14.00%.
+TCS,PRO,PRO_10,ROE,10 Years,40.0,Excellent return on equity of 40.00%.
+TCS,PRO,PRO_02,Revenue CAGR,5 Years,10.0,Healthy revenue growth of 10.00%.
+TCS,PRO,PRO_06,PAT CAGR,5 Years,8.0,Positive profit growth of 8.00%.
+TCS,PRO,PRO_08,Stock Price CAGR,5 Years,16.0,Healthy stock-price CAGR of 16.00%.
+TCS,PRO,PRO_10,ROE,5 Years,44.0,Excellent return on equity of 44.00%.
+TCS,PRO,PRO_02,Revenue CAGR,3 Years,14.0,Healthy revenue growth of 14.00%.
+TCS,PRO,PRO_05,PAT CAGR,3 Years,12.0,Healthy profit growth of 12.00%.
+TCS,PRO,PRO_09,Stock Price CAGR,3 Years,8.0,Positive stock-price CAGR of 8.00%.
+TCS,PRO,PRO_10,ROE,3 Years,47.0,Excellent return on equity of 47.00%.
+TCS,PRO,PRO_03,Revenue CAGR,TTM,5.0,Positive revenue growth of 5.00%.
+TCS,PRO,PRO_06,PAT CAGR,TTM,8.0,Positive profit growth of 8.00%.
+TCS,PRO,PRO_08,Stock Price CAGR,1 Year,16.0,Healthy stock-price CAGR of 16.00%.
+TCS,PRO,PRO_10,ROE,1 Year,52.0,Excellent return on equity of 52.00%.
+WIPRO,PRO,PRO_03,Revenue CAGR,10 Years,8.0,Positive revenue growth of 8.00%.
+WIPRO,CON,CON_06,PAT CAGR,10 Years,3.0,Profit growth is modest at 3.00%.
+WIPRO,PRO,PRO_08,Stock Price CAGR,10 Years,12.0,Healthy stock-price CAGR of 12.00%.
+WIPRO,PRO,PRO_11,ROE,10 Years,18.0,Healthy return on equity of 18.00%.
+WIPRO,PRO,PRO_03,Revenue CAGR,5 Years,9.0,Positive revenue growth of 9.00%.
+WIPRO,CON,CON_06,PAT CAGR,5 Years,4.0,Profit growth is modest at 4.00%.
+WIPRO,PRO,PRO_07,Stock Price CAGR,5 Years,20.0,Strong stock-price CAGR of 20.00%.
+WIPRO,PRO,PRO_11,ROE,5 Years,17.0,Healthy return on equity of 17.00%.
+WIPRO,PRO,PRO_02,Revenue CAGR,3 Years,13.0,Healthy revenue growth of 13.00%.
+WIPRO,CON,CON_05,PAT CAGR,3 Years,0.0,Profit growth is weak at 0.00%.
+WIPRO,CON,CON_07,Stock Price CAGR,3 Years,-1.0,Stock-price CAGR is negative at -1.00%.
+WIPRO,PRO,PRO_11,ROE,3 Years,17.0,Healthy return on equity of 17.00%.
+HDFCBANK,PRO,PRO_01,Revenue CAGR,5 Years,22.0,Excellent revenue growth of 22.00%.
+HDFCBANK,PRO,PRO_04,PAT CAGR,5 Years,23.0,Excellent profit growth of 23.00%.
+HDFCBANK,PRO,PRO_09,Stock Price CAGR,5 Years,8.0,Positive stock-price CAGR of 8.00%.
+HDFCBANK,PRO,PRO_11,ROE,5 Years,17.0,Healthy return on equity of 17.00%.
+WIPRO,CON,CON_01,Revenue CAGR,TTM,-3.0,Revenue contracted by 3.00%.
+WIPRO,CON,CON_05,PAT CAGR,TTM,1.0,Profit growth is weak at 1.00%.
+WIPRO,PRO,PRO_07,Stock Price CAGR,1 Year,39.0,Strong stock-price CAGR of 39.00%.
+WIPRO,PRO,PRO_12,ROE,1 Year,14.0,Positive return on equity of 14.00%.
+HDFCBANK,PRO,PRO_01,Revenue CAGR,3 Years,30.0,Excellent revenue growth of 30.00%.
+HDFCBANK,PRO,PRO_04,PAT CAGR,3 Years,26.0,Excellent profit growth of 26.00%.
+HDFCBANK,PRO,PRO_09,Stock Price CAGR,3 Years,8.0,Positive stock-price CAGR of 8.00%.
+HDFCBANK,PRO,PRO_11,ROE,3 Years,17.0,Healthy return on equity of 17.00%.
+HDFCBANK,PRO,PRO_01,Revenue CAGR,TTM,47.0,Excellent revenue growth of 47.00%.
+HDFCBANK,PRO,PRO_04,PAT CAGR,TTM,27.0,Excellent profit growth of 27.00%.
+HDFCBANK,PRO,PRO_08,Stock Price CAGR,1 Year,13.0,Healthy stock-price CAGR of 13.00%.
+HDFCBANK,PRO,PRO_11,ROE,1 Year,17.0,Healthy return on equity of 17.00%.
+INFY,PRO,PRO_02,Revenue CAGR,10 Years,12.0,Healthy revenue growth of 12.00%.
+INFY,PRO,PRO_06,PAT CAGR,10 Years,9.0,Positive profit growth of 9.00%.
+INFY,PRO,PRO_08,Stock Price CAGR,10 Years,15.0,Healthy stock-price CAGR of 15.00%.
+INFY,PRO,PRO_10,ROE,10 Years,27.0,Excellent return on equity of 27.00%.
+INFY,PRO,PRO_02,Revenue CAGR,5 Years,13.0,Healthy revenue growth of 13.00%.
+INFY,PRO,PRO_05,PAT CAGR,5 Years,11.0,Healthy profit growth of 11.00%.
+INFY,PRO,PRO_07,Stock Price CAGR,5 Years,22.0,Strong stock-price CAGR of 22.00%.
+INFY,PRO,PRO_10,ROE,5 Years,29.0,Excellent return on equity of 29.00%.
+INFY,PRO,PRO_03,Revenue CAGR,3 Years,5.0,Positive revenue growth of 5.00%.
+INFY,PRO,PRO_05,PAT CAGR,3 Years,10.0,Healthy profit growth of 10.00%.
+INFY,CON,CON_09,Stock Price CAGR,3 Years,4.0,Stock-price CAGR is modest at 4.00%.
+INFY,PRO,PRO_10,ROE,3 Years,31.0,Excellent return on equity of 31.00%.
+INFY,CON,CON_03,Revenue CAGR,TTM,3.0,Revenue growth is modest at 3.00%.
+INFY,PRO,PRO_06,PAT CAGR,TTM,8.0,Positive profit growth of 8.00%.
+INFY,PRO,PRO_07,Stock Price CAGR,1 Year,27.0,Strong stock-price CAGR of 27.00%.
+INFY,PRO,PRO_10,ROE,1 Year,32.0,Excellent return on equity of 32.00%.
+SBILIFE,PRO,PRO_01,Revenue CAGR,10 Years,23.0,Excellent revenue growth of 23.00%.
+SBILIFE,PRO,PRO_06,PAT CAGR,10 Years,9.0,Positive profit growth of 9.00%.
+SBILIFE,PRO,PRO_09,Stock Price CAGR,10 Years,9.0,Positive stock-price CAGR of 9.00%.
+SBILIFE,PRO,PRO_11,ROE,10 Years,16.0,Healthy return on equity of 16.00%.

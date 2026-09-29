@@ -1,4 +1,4 @@
-"""Day 29 - Automatic Pros and Cons Generator."""
+"""Sprint 5 - Day 30: Automatic Pros and Cons Generator."""
 
 from __future__ import annotations
 
@@ -47,7 +47,7 @@ def add_signal(
     period,
     message,
 ):
-    """Add one generated signal."""
+    """Add one generated financial signal."""
 
     signals.append(
         {
@@ -60,190 +60,184 @@ def add_signal(
     )
 
 
+def period_label(period_years):
+    """Convert normalized period value into readable text."""
+
+    if pd.isna(period_years):
+        return "Unknown Period"
+
+    period_years = int(period_years)
+
+    if period_years == 0:
+        return "TTM"
+
+    if period_years == 1:
+        return "1 Year"
+
+    return f"{period_years} Years"
+
+
 # ============================================================
 # 12 PRO RULES
 # ============================================================
 
-def generate_pros(row):
+def generate_pros(
+    metric_type,
+    value,
+    period,
+):
     """Generate positive signals using 12 explicit rules."""
 
     pros = []
 
-    sales = row.get("sales_growth_pct")
-    sales_period = row.get("sales_growth_period")
+    if not valid(value):
+        return pros
 
-    profit = row.get("profit_growth_pct")
-    profit_period = row.get("profit_growth_period")
-
-    stock = row.get("stock_price_cagr_pct")
-    stock_period = row.get("stock_price_cagr_period")
-
-    roe = row.get("roe_pct")
-    roe_period = row.get("roe_period")
-
+    value = float(value)
 
     # --------------------------------------------------------
-    # SALES GROWTH - 3 PRO RULES
+    # REVENUE CAGR - 3 PRO RULES
     # --------------------------------------------------------
 
-    if valid(sales) and sales >= 20:
-        add_signal(
-            pros,
-            "PRO_01",
-            "Sales Growth",
-            sales,
-            sales_period,
-            f"Excellent sales growth of {sales:.2f}%.",
-        )
+    if metric_type == "revenue_cagr":
 
-    if (
-        valid(sales)
-        and 10 <= sales < 20
-    ):
-        add_signal(
-            pros,
-            "PRO_02",
-            "Sales Growth",
-            sales,
-            sales_period,
-            f"Healthy sales growth of {sales:.2f}%.",
-        )
+        if value >= 20:
+            add_signal(
+                pros,
+                "PRO_01",
+                "Revenue CAGR",
+                value,
+                period,
+                f"Excellent revenue growth of {value:.2f}%.",
+            )
 
-    if (
-        valid(sales)
-        and 5 <= sales < 10
-    ):
-        add_signal(
-            pros,
-            "PRO_03",
-            "Sales Growth",
-            sales,
-            sales_period,
-            f"Positive sales growth of {sales:.2f}%.",
-        )
+        elif 10 <= value < 20:
+            add_signal(
+                pros,
+                "PRO_02",
+                "Revenue CAGR",
+                value,
+                period,
+                f"Healthy revenue growth of {value:.2f}%.",
+            )
 
+        elif 5 <= value < 10:
+            add_signal(
+                pros,
+                "PRO_03",
+                "Revenue CAGR",
+                value,
+                period,
+                f"Positive revenue growth of {value:.2f}%.",
+            )
 
     # --------------------------------------------------------
-    # PROFIT GROWTH - 3 PRO RULES
+    # PAT CAGR - 3 PRO RULES
     # --------------------------------------------------------
 
-    if valid(profit) and profit >= 20:
-        add_signal(
-            pros,
-            "PRO_04",
-            "Profit Growth",
-            profit,
-            profit_period,
-            f"Excellent profit growth of {profit:.2f}%.",
-        )
+    elif metric_type == "pat_cagr":
 
-    if (
-        valid(profit)
-        and 10 <= profit < 20
-    ):
-        add_signal(
-            pros,
-            "PRO_05",
-            "Profit Growth",
-            profit,
-            profit_period,
-            f"Healthy profit growth of {profit:.2f}%.",
-        )
+        if value >= 20:
+            add_signal(
+                pros,
+                "PRO_04",
+                "PAT CAGR",
+                value,
+                period,
+                f"Excellent profit growth of {value:.2f}%.",
+            )
 
-    if (
-        valid(profit)
-        and 5 <= profit < 10
-    ):
-        add_signal(
-            pros,
-            "PRO_06",
-            "Profit Growth",
-            profit,
-            profit_period,
-            f"Positive profit growth of {profit:.2f}%.",
-        )
+        elif 10 <= value < 20:
+            add_signal(
+                pros,
+                "PRO_05",
+                "PAT CAGR",
+                value,
+                period,
+                f"Healthy profit growth of {value:.2f}%.",
+            )
 
+        elif 5 <= value < 10:
+            add_signal(
+                pros,
+                "PRO_06",
+                "PAT CAGR",
+                value,
+                period,
+                f"Positive profit growth of {value:.2f}%.",
+            )
 
     # --------------------------------------------------------
     # STOCK PRICE CAGR - 3 PRO RULES
     # --------------------------------------------------------
 
-    if valid(stock) and stock >= 20:
-        add_signal(
-            pros,
-            "PRO_07",
-            "Stock Price CAGR",
-            stock,
-            stock_period,
-            f"Strong stock-price CAGR of {stock:.2f}%.",
-        )
+    elif metric_type == "stock_price_cagr":
 
-    if (
-        valid(stock)
-        and 10 <= stock < 20
-    ):
-        add_signal(
-            pros,
-            "PRO_08",
-            "Stock Price CAGR",
-            stock,
-            stock_period,
-            f"Healthy stock-price CAGR of {stock:.2f}%.",
-        )
+        if value >= 20:
+            add_signal(
+                pros,
+                "PRO_07",
+                "Stock Price CAGR",
+                value,
+                period,
+                f"Strong stock-price CAGR of {value:.2f}%.",
+            )
 
-    if (
-        valid(stock)
-        and 5 <= stock < 10
-    ):
-        add_signal(
-            pros,
-            "PRO_09",
-            "Stock Price CAGR",
-            stock,
-            stock_period,
-            f"Positive stock-price CAGR of {stock:.2f}%.",
-        )
+        elif 10 <= value < 20:
+            add_signal(
+                pros,
+                "PRO_08",
+                "Stock Price CAGR",
+                value,
+                period,
+                f"Healthy stock-price CAGR of {value:.2f}%.",
+            )
 
+        elif 5 <= value < 10:
+            add_signal(
+                pros,
+                "PRO_09",
+                "Stock Price CAGR",
+                value,
+                period,
+                f"Positive stock-price CAGR of {value:.2f}%.",
+            )
 
     # --------------------------------------------------------
     # ROE - 3 PRO RULES
     # --------------------------------------------------------
 
-    if valid(roe) and roe >= 25:
-        add_signal(
-            pros,
-            "PRO_10",
-            "ROE",
-            roe,
-            roe_period,
-            f"Excellent return on equity of {roe:.2f}%.",
-        )
+    elif metric_type == "roe":
 
-    if (
-        valid(roe)
-        and 15 <= roe < 25
-    ):
-        add_signal(
-            pros,
-            "PRO_11",
-            "ROE",
-            roe,
-            roe_period,
-            f"Healthy return on equity of {roe:.2f}%.",
-        )
+        if value >= 25:
+            add_signal(
+                pros,
+                "PRO_10",
+                "ROE",
+                value,
+                period,
+                f"Excellent return on equity of {value:.2f}%.",
+            )
 
-    if (
-        valid(roe)
-        and 10 <= roe < 15
-    ):
-        add_signal(
-            pros,
-            "PRO_12",
-            "ROE",
-            roe,
-            roe_period,
-            f"Positive return on equity of {roe:.2f}%.",
-        )
+        elif 15 <= value < 25:
+            add_signal(
+                pros,
+                "PRO_11",
+                "ROE",
+                value,
+                period,
+                f"Healthy return on equity of {value:.2f}%.",
+            )
+
+        elif 10 <= value < 15:
+            add_signal(
+                pros,
+                "PRO_12",
+                "ROE",
+                value,
+                period,
+                f"Positive return on equity of {value:.2f}%.",
+            )
 
     return pros
 
@@ -252,196 +246,178 @@ def generate_pros(row):
 # 12 CON RULES
 # ============================================================
 
-def generate_cons(row):
+def generate_cons(
+    metric_type,
+    value,
+    period,
+):
     """Generate negative signals using 12 explicit rules."""
 
     cons = []
 
-    sales = row.get("sales_growth_pct")
-    sales_period = row.get("sales_growth_period")
+    if not valid(value):
+        return cons
 
-    profit = row.get("profit_growth_pct")
-    profit_period = row.get("profit_growth_period")
-
-    stock = row.get("stock_price_cagr_pct")
-    stock_period = row.get("stock_price_cagr_period")
-
-    roe = row.get("roe_pct")
-    roe_period = row.get("roe_period")
-
+    value = float(value)
 
     # --------------------------------------------------------
-    # SALES GROWTH - 3 CON RULES
+    # REVENUE CAGR - 3 CON RULES
     # --------------------------------------------------------
 
-    if valid(sales) and sales < 0:
-        add_signal(
-            cons,
-            "CON_01",
-            "Sales Growth",
-            sales,
-            sales_period,
-            f"Sales contracted by {abs(sales):.2f}%.",
-        )
+    if metric_type == "revenue_cagr":
 
-    if (
-        valid(sales)
-        and 0 <= sales < 3
-    ):
-        add_signal(
-            cons,
-            "CON_02",
-            "Sales Growth",
-            sales,
-            sales_period,
-            f"Sales growth is weak at {sales:.2f}%.",
-        )
+        if value < 0:
+            add_signal(
+                cons,
+                "CON_01",
+                "Revenue CAGR",
+                value,
+                period,
+                f"Revenue contracted by {abs(value):.2f}%.",
+            )
 
-    if (
-        valid(sales)
-        and 3 <= sales < 5
-    ):
-        add_signal(
-            cons,
-            "CON_03",
-            "Sales Growth",
-            sales,
-            sales_period,
-            f"Sales growth is modest at {sales:.2f}%.",
-        )
+        elif 0 <= value < 3:
+            add_signal(
+                cons,
+                "CON_02",
+                "Revenue CAGR",
+                value,
+                period,
+                f"Revenue growth is weak at {value:.2f}%.",
+            )
 
+        elif 3 <= value < 5:
+            add_signal(
+                cons,
+                "CON_03",
+                "Revenue CAGR",
+                value,
+                period,
+                f"Revenue growth is modest at {value:.2f}%.",
+            )
 
     # --------------------------------------------------------
-    # PROFIT GROWTH - 3 CON RULES
+    # PAT CAGR - 3 CON RULES
     # --------------------------------------------------------
 
-    if valid(profit) and profit < 0:
-        add_signal(
-            cons,
-            "CON_04",
-            "Profit Growth",
-            profit,
-            profit_period,
-            f"Profit contracted by {abs(profit):.2f}%.",
-        )
+    elif metric_type == "pat_cagr":
 
-    if (
-        valid(profit)
-        and 0 <= profit < 3
-    ):
-        add_signal(
-            cons,
-            "CON_05",
-            "Profit Growth",
-            profit,
-            profit_period,
-            f"Profit growth is weak at {profit:.2f}%.",
-        )
+        if value < 0:
+            add_signal(
+                cons,
+                "CON_04",
+                "PAT CAGR",
+                value,
+                period,
+                f"Profit contracted by {abs(value):.2f}%.",
+            )
 
-    if (
-        valid(profit)
-        and 3 <= profit < 5
-    ):
-        add_signal(
-            cons,
-            "CON_06",
-            "Profit Growth",
-            profit,
-            profit_period,
-            f"Profit growth is modest at {profit:.2f}%.",
-        )
+        elif 0 <= value < 3:
+            add_signal(
+                cons,
+                "CON_05",
+                "PAT CAGR",
+                value,
+                period,
+                f"Profit growth is weak at {value:.2f}%.",
+            )
 
+        elif 3 <= value < 5:
+            add_signal(
+                cons,
+                "CON_06",
+                "PAT CAGR",
+                value,
+                period,
+                f"Profit growth is modest at {value:.2f}%.",
+            )
 
     # --------------------------------------------------------
     # STOCK PRICE CAGR - 3 CON RULES
     # --------------------------------------------------------
 
-    if valid(stock) and stock < 0:
-        add_signal(
-            cons,
-            "CON_07",
-            "Stock Price CAGR",
-            stock,
-            stock_period,
-            f"Stock-price CAGR is negative at {stock:.2f}%.",
-        )
+    elif metric_type == "stock_price_cagr":
 
-    if (
-        valid(stock)
-        and 0 <= stock < 3
-    ):
-        add_signal(
-            cons,
-            "CON_08",
-            "Stock Price CAGR",
-            stock,
-            stock_period,
-            f"Stock-price CAGR is weak at {stock:.2f}%.",
-        )
+        if value < 0:
+            add_signal(
+                cons,
+                "CON_07",
+                "Stock Price CAGR",
+                value,
+                period,
+                f"Stock-price CAGR is negative at {value:.2f}%.",
+            )
 
-    if (
-        valid(stock)
-        and 3 <= stock < 5
-    ):
-        add_signal(
-            cons,
-            "CON_09",
-            "Stock Price CAGR",
-            stock,
-            stock_period,
-            f"Stock-price CAGR is modest at {stock:.2f}%.",
-        )
+        elif 0 <= value < 3:
+            add_signal(
+                cons,
+                "CON_08",
+                "Stock Price CAGR",
+                value,
+                period,
+                f"Stock-price CAGR is weak at {value:.2f}%.",
+            )
 
+        elif 3 <= value < 5:
+            add_signal(
+                cons,
+                "CON_09",
+                "Stock Price CAGR",
+                value,
+                period,
+                f"Stock-price CAGR is modest at {value:.2f}%.",
+            )
 
     # --------------------------------------------------------
     # ROE - 3 CON RULES
     # --------------------------------------------------------
 
-    if valid(roe) and roe < 5:
-        add_signal(
-            cons,
-            "CON_10",
-            "ROE",
-            roe,
-            roe_period,
-            f"Return on equity is very low at {roe:.2f}%.",
-        )
+    elif metric_type == "roe":
 
-    if (
-        valid(roe)
-        and 5 <= roe < 8
-    ):
-        add_signal(
-            cons,
-            "CON_11",
-            "ROE",
-            roe,
-            roe_period,
-            f"Return on equity is weak at {roe:.2f}%.",
-        )
+        if value < 5:
+            add_signal(
+                cons,
+                "CON_10",
+                "ROE",
+                value,
+                period,
+                f"Return on equity is very low at {value:.2f}%.",
+            )
 
-    if (
-        valid(roe)
-        and 8 <= roe < 10
-    ):
-        add_signal(
-            cons,
-            "CON_12",
-            "ROE",
-            roe,
-            roe_period,
-            f"Return on equity is below 10% at {roe:.2f}%.",
-        )
+        elif 5 <= value < 8:
+            add_signal(
+                cons,
+                "CON_11",
+                "ROE",
+                value,
+                period,
+                f"Return on equity is weak at {value:.2f}%.",
+            )
+
+        elif 8 <= value < 10:
+            add_signal(
+                cons,
+                "CON_12",
+                "ROE",
+                value,
+                period,
+                f"Return on equity is below 10% at {value:.2f}%.",
+            )
 
     return cons
 
 
 # ============================================================
-# GENERATE OUTPUT
+# GENERATOR
 # ============================================================
 
 def generate_pros_cons():
-    """Generate Pros and Cons for every parsed analysis row."""
+    """
+    Generate Pros and Cons from normalized Day 29 data.
+
+    Each normalized financial metric is evaluated against
+    the 12 Pro and 12 Con rules.
+    """
 
     if not INPUT_PATH.exists():
         raise FileNotFoundError(
@@ -452,69 +428,128 @@ def generate_pros_cons():
         INPUT_PATH
     )
 
-    output_rows = []
+    required_columns = {
+        "company_id",
+        "metric_type",
+        "period_years",
+        "value_pct",
+    }
+
+    missing = (
+        required_columns
+        - set(frame.columns)
+    )
+
+    if missing:
+        raise ValueError(
+            "Missing required parsed-analysis columns: "
+            + ", ".join(sorted(missing))
+        )
+
+    signal_rows = []
 
     for _, row in frame.iterrows():
 
+        company_id = str(
+            row["company_id"]
+        ).strip()
+
+        metric_type = str(
+            row["metric_type"]
+        ).strip()
+
+        value = row["value_pct"]
+
+        period = period_label(
+            row["period_years"]
+        )
+
         pros = generate_pros(
-            row
+            metric_type,
+            value,
+            period,
         )
 
         cons = generate_cons(
-            row
+            metric_type,
+            value,
+            period,
         )
 
-        output_rows.append(
-            {
-                "id":
-                    row.get("id"),
+        for signal in pros:
 
-                "company_id":
-                    row.get("company_id"),
+            signal_rows.append(
+                {
+                    "company_id":
+                        company_id,
 
-                "pros_count":
-                    len(pros),
+                    "signal_type":
+                        "PRO",
 
-                "cons_count":
-                    len(cons),
+                    "rule_id":
+                        signal["rule_id"],
 
-                "pros":
-                    " | ".join(
-                        item["message"]
-                        for item in pros
-                    ),
+                    "metric":
+                        signal["metric"],
 
-                "cons":
-                    " | ".join(
-                        item["message"]
-                        for item in cons
-                    ),
+                    "period":
+                        signal["period"],
 
-                "pro_rule_ids":
-                    ", ".join(
-                        item["rule_id"]
-                        for item in pros
-                    ),
+                    "value_pct":
+                        signal["value_pct"],
 
-                "con_rule_ids":
-                    ", ".join(
-                        item["rule_id"]
-                        for item in cons
-                    ),
-            }
-        )
+                    "message":
+                        signal["message"],
+                }
+            )
+
+        for signal in cons:
+
+            signal_rows.append(
+                {
+                    "company_id":
+                        company_id,
+
+                    "signal_type":
+                        "CON",
+
+                    "rule_id":
+                        signal["rule_id"],
+
+                    "metric":
+                        signal["metric"],
+
+                    "period":
+                        signal["period"],
+
+                    "value_pct":
+                        signal["value_pct"],
+
+                    "message":
+                        signal["message"],
+                }
+            )
 
     return pd.DataFrame(
-        output_rows
+        signal_rows,
+        columns=[
+            "company_id",
+            "signal_type",
+            "rule_id",
+            "metric",
+            "period",
+            "value_pct",
+            "message",
+        ],
     )
 
 
 # ============================================================
-# EXPORT
+# SAVE OUTPUT
 # ============================================================
 
 def save_pros_cons(frame):
-    """Save generated Pros and Cons."""
+    """Save Day 30 generated Pros and Cons."""
 
     OUTPUT_PATH.parent.mkdir(
         parents=True,
@@ -524,6 +559,98 @@ def save_pros_cons(frame):
     frame.to_csv(
         OUTPUT_PATH,
         index=False,
+    )
+
+
+# ============================================================
+# QA
+# ============================================================
+
+def print_rule_coverage(frame):
+    """Print Day 30 rule coverage."""
+
+    if frame.empty:
+
+        print(
+            "NO PRO / CON SIGNALS GENERATED"
+        )
+
+        return
+
+    pro_rows = frame[
+        frame["signal_type"] == "PRO"
+    ]
+
+    con_rows = frame[
+        frame["signal_type"] == "CON"
+    ]
+
+    print(
+        "TOTAL SIGNALS:",
+        len(frame),
+    )
+
+    print(
+        "TOTAL PRO SIGNALS:",
+        len(pro_rows),
+    )
+
+    print(
+        "TOTAL CON SIGNALS:",
+        len(con_rows),
+    )
+
+    print(
+        "COMPANIES:",
+        frame["company_id"].nunique(),
+    )
+
+    print(
+        "\nPRO RULES TRIGGERED:"
+    )
+
+    triggered_pros = sorted(
+        pro_rows["rule_id"]
+        .dropna()
+        .unique()
+        .tolist()
+    )
+
+    if triggered_pros:
+        print(
+            ", ".join(triggered_pros)
+        )
+    else:
+        print("NONE")
+
+    print(
+        "\nCON RULES TRIGGERED:"
+    )
+
+    triggered_cons = sorted(
+        con_rows["rule_id"]
+        .dropna()
+        .unique()
+        .tolist()
+    )
+
+    if triggered_cons:
+        print(
+            ", ".join(triggered_cons)
+        )
+    else:
+        print("NONE")
+
+    print(
+        "\nRULES IMPLEMENTED:"
+    )
+
+    print(
+        "PRO RULES: 12"
+    )
+
+    print(
+        "CON RULES: 12"
     )
 
 
@@ -540,49 +667,15 @@ def main():
     )
 
     print(
-        "PROS / CONS GENERATOR COMPLETE"
+        "DAY 30 PROS / CONS GENERATOR COMPLETE"
+    )
+
+    print_rule_coverage(
+        output
     )
 
     print(
-        "ROWS:",
-        len(output),
-    )
-
-    print(
-        "COMPANIES:",
-        output[
-            "company_id"
-        ].nunique(),
-    )
-
-    print(
-        "TOTAL PRO SIGNALS:",
-        int(
-            output[
-                "pros_count"
-            ].sum()
-        ),
-    )
-
-    print(
-        "TOTAL CON SIGNALS:",
-        int(
-            output[
-                "cons_count"
-            ].sum()
-        ),
-    )
-
-    print(
-        "PRO RULES IMPLEMENTED: 12"
-    )
-
-    print(
-        "CON RULES IMPLEMENTED: 12"
-    )
-
-    print(
-        "OUTPUT:",
+        "\nOUTPUT:",
         OUTPUT_PATH,
     )
 

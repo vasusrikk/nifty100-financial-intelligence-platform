@@ -583,101 +583,80 @@ else:
 # NLP-GENERATED PROS & CONS
 # ============================================================
 
-st.subheader(
-    "Pros & Cons"
-)
+st.subheader("Pros & Cons")
 
 st.caption(
-    "Automatically generated from the structured financial "
-    "analysis using the Day 29 NLP rule engine."
+    "Rule-based financial insights generated from the "
+    "structured Sprint 5 analysis data."
 )
 
-pros = []
-cons = []
+pros = pd.DataFrame()
+cons = pd.DataFrame()
 
 if (
     generated_insights is not None
     and not generated_insights.empty
 ):
 
-    # Collect generated Pros from all available
-    # analysis periods for the selected company.
-    for value in (
-        generated_insights["pros"]
-        .dropna()
-        .astype(str)
-    ):
-        for item in value.split("|"):
-            item = item.strip()
+    pros = generated_insights[
+        generated_insights["signal_type"] == "PRO"
+    ].copy()
 
-            if (
-                item
-                and item not in pros
-            ):
-                pros.append(item)
-
-    # Collect generated Cons from all available
-    # analysis periods for the selected company.
-    for value in (
-        generated_insights["cons"]
-        .dropna()
-        .astype(str)
-    ):
-        for item in value.split("|"):
-            item = item.strip()
-
-            if (
-                item
-                and item not in cons
-            ):
-                cons.append(item)
+    cons = generated_insights[
+        generated_insights["signal_type"] == "CON"
+    ].copy()
 
 
 pros_col, cons_col = st.columns(2)
 
+
 with pros_col:
 
-    st.markdown(
-        "### Pros"
-    )
+    st.markdown("### Pros")
 
-    if pros:
+    if not pros.empty:
 
-        for item in pros:
+        for _, insight in pros.iterrows():
+
+            message = insight["message"]
+            period = insight["period"]
+            metric = insight["metric"]
 
             st.success(
-                f"✓ {item}"
+                f"✓ {message}\n\n"
+                f"**{metric} · {period}**"
             )
 
     else:
 
         st.info(
-            "No NLP-generated positive "
-            "signals are available for "
-            "this company."
+            "No positive signals were generated "
+            "for this company."
         )
 
 
 with cons_col:
 
-    st.markdown(
-        "### Cons"
-    )
+    st.markdown("### Cons")
 
-    if cons:
+    if not cons.empty:
 
-        for item in cons:
+        for _, insight in cons.iterrows():
+
+            message = insight["message"]
+            period = insight["period"]
+            metric = insight["metric"]
 
             st.error(
-                f"✗ {item}"
+                f"✗ {message}\n\n"
+                f"**{metric} · {period}**"
             )
 
     else:
 
         st.info(
-            "No NLP-generated negative "
-            "signals are available for "
-            "this company."
+            "No negative signals were generated "
+            "for this company."
         )
 
 
@@ -687,10 +666,9 @@ if (
 ):
 
     st.caption(
-        "Generated analysis is currently unavailable "
-        "for this company."
+        "Generated Sprint 5 analysis is currently "
+        "unavailable for this company."
     )
-
 
 
 # ============================================================
