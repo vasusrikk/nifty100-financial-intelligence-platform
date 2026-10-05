@@ -1,6 +1,6 @@
-.PHONY: load ratios test report dashboard api clean
+.PHONY: load ratios test report portfolio sectors acceptance dashboard api final-qa clean
 
-# Load and validate the financial datasets
+# Load and validate source datasets
 load:
 	python -m src.etl.loader
 	python -m src.etl.validator
@@ -9,22 +9,41 @@ load:
 ratios:
 	python -m src.analytics.populate_ratios
 
-# Run automated tests
+# Run complete automated test suite
 test:
-	python -m pytest -v
+	python -m pytest tests -q
 
-# Reporting entry point
+# Generate all 92 company tear sheets
 report:
-	@echo "Report module will be implemented in the reporting sprint."
+	python -m src.reports.batch_generate
 
-# Dashboard entry point
+# Generate portfolio summary PDF
+portfolio:
+	python -m src.reports.portfolio_summary
+
+# Generate all sector reports
+sectors:
+	python -m src.reports.sector_reports
+
+# Generate final Sprint 1-6 acceptance checklist
+acceptance:
+	python -m src.reports.acceptance_checklist
+
+# Launch Streamlit dashboard
 dashboard:
-	@echo "Dashboard module will be implemented in the dashboard sprint."
+	python -m streamlit run src/dashboard/app.py
 
-# API entry point
+# Launch FastAPI development server
 api:
-	@echo "API module will be implemented in the API sprint."
+	python -m uvicorn src.api.main:app --host 127.0.0.1 --port 8000
 
-# Remove Python cache and pytest cache files
+# Final automated QA
+final-qa:
+	python -m pytest tests -q
+	python -m src.reports.portfolio_summary
+	python -m src.reports.sector_reports
+	python -m src.reports.acceptance_checklist
+
+# Remove Python/pytest caches
 clean:
 	python -c "import pathlib,shutil; [shutil.rmtree(p,ignore_errors=True) for p in pathlib.Path('.').rglob('__pycache__')]; shutil.rmtree('.pytest_cache',ignore_errors=True)"

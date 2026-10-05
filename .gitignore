@@ -27,3 +27,4 @@ Thumbs.db
 
 # Generated reports
 reports/
+.venv312/

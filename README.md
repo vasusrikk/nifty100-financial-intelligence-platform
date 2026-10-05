@@ -1,4 +1,4 @@
-# NIFTY100 Financial Intelligence Platform
+﻿# NIFTY100 Financial Intelligence Platform
 
 ## Project Overview
 
@@ -278,70 +278,409 @@ output/valuation_flags.csv
 dashboard_qa.md
 
 
-## Step 5 — Sprint 5: Intelligence & Automated Reports
 
-Immediately underneath Sprint 4, paste:
 
-```markdown
+
+
 ## Sprint 5 - Intelligence & Automated Reports
 
 ### Objective
 
-Sprint 5 completed the financial intelligence and automated reporting layer of the NIFTY100 Financial Intelligence Platform.
+Sprint 5 implemented the financial-intelligence and automated-reporting layer of the NIFTY100 Financial Intelligence Platform.
 
-The sprint introduced structured financial-text parsing, explainable Pros and Cons generation, cash-flow quality analysis, financial-distress detection, capital-allocation intelligence, and automated company PDF tear sheets.
+The sprint introduced structured financial-text parsing, explainable Pros and Cons generation, cash-flow intelligence, capital-allocation analysis, and automated company PDF tear sheets.
 
----
+### Analysis Parser
 
-### Day 29 - Analysis Parser
+The financial Analysis workbook contains textual metrics that must be converted into structured analytical records.
 
-The Analysis workbook contains financial information represented as text, such as growth percentages associated with different periods.
+The parser is implemented in:
 
-The Day 29 parser converts these values into structured analytical records.
+`src/nlp/analysis_parser.py`
 
-The parser processes metrics including:
+It processes:
 
 - Compounded Sales Growth
 - Compounded Profit Growth
 - Stock Price CAGR
 - ROE
 
-The parser extracts:
+Verified source coverage:
 
-- Metric type
+- Source companies: 5
+- Parsed rows: 80
+- Four metric types
+- 16 normalized metric records per represented company
+
+The source Analysis workbook itself contains only five companies. This is a source-data limitation and is not artificially expanded to the complete 92-company universe.
+
+Main output:
+
+`output/analysis_parsed.csv`
+
+### Explainable Pros and Cons
+
+Rule-based Pros and Cons generation is implemented in:
+
+`src/nlp/pros_cons.py`
+
+The engine contains:
+
+- 12 explicit PRO rules
+- 12 explicit CON rules
+- Revenue-growth rules
+- Profit-growth rules
+- Stock-price-growth rules
+- ROE rules
+
+Generated signals preserve:
+
+- Company identifier
+- Signal type
+- Rule identifier
+- Metric
 - Period
 - Percentage value
-- Company identifier
+- Human-readable explanation
 
-### Day 29 Validation Results
+Because the source Analysis workbook contains five companies, text-derived Pros and Cons are limited to those available source companies rather than fabricated for all 92 companies.
+
+### Cash-Flow Intelligence
+
+Cash-flow intelligence is implemented through the analytics layer.
+
+Major functionality includes:
+
+- CFO quality analysis
+- Cash-flow KPI computation
+- Financial-distress pattern analysis
+- Structured cash-flow reporting
+
+Verified analytical coverage reaches 91 companies where the required source financial information is available.
+
+Main deliverable:
+
+`output/cashflow_intelligence.xlsx`
+
+### Capital-Allocation Intelligence
+
+The capital-allocation layer evaluates company financial behavior using available operating, investment, financing, and balance-sheet information.
+
+Main output:
+
+`output/capital_allocation.csv`
+
+Verified analytical coverage reaches 91 companies where the required source values are available.
+
+### Automated Company Tear Sheets
+
+Automated PDF reporting is implemented in:
+
+`src/reports/tearsheet.py`
+
+Batch generation is implemented in:
+
+`src/reports/batch_generate.py`
+
+The reports combine available company analytics into concise company-level financial tear sheets.
+
+Final verified result:
+
+- Total companies: 92
+- Tear sheets generated: 92
+- Tear sheets validated: 92
+- Required two-page reports: 92 / 92
+- Generation failures: 0
+
+Output directory:
+
+`reports/tearsheets/`
+
+### Sprint 5 Final Result
+
+Sprint 5 successfully completed the financial-intelligence and automated-reporting layer.
+
+Detailed implementation history and QA evidence are maintained in:
+
+`sprint5_retro.md`
+
+---
+
+## Sprint 6 - Advanced Analytics, API & Finalization
+
+### Objective
+
+Sprint 6 completed the advanced analytics, programmatic API, deployment-readiness, portfolio intelligence, final reporting, regression testing, and acceptance-validation layers of the platform.
+
+### Company Clustering
+
+Unsupervised company segmentation is implemented in:
+
+`src/analytics/clustering.py`
+
+Final verified results:
+
+- Companies clustered: 92
+- Analytical clusters: 5
+- Cluster-label rows: 92
+
+Output:
+
+`output/cluster_labels.csv`
+
+### Cluster Profiling
+
+Cluster interpretation is implemented in:
+
+`src/analytics/cluster_profiling.py`
+
+Final output:
+
+`output/cluster_profiles.csv`
+
+Verified result:
+
+- Cluster profiles: 5
+- Output columns: 13
+
+### Outlier Detection
+
+The advanced analytics layer identifies unusual company observations within the financial universe.
+
+Output:
+
+`output/outlier_report.csv`
+
+Verified result:
+
+- Outliers identified: 11
+- Output columns: 8
+
+### Portfolio Statistics
+
+Portfolio-level distribution statistics are stored in:
+
+`output/portfolio_stats.csv`
+
+The portfolio statistics cover 10 major KPIs and include:
+
+- Observation count
+- 10th percentile
+- 25th percentile
+- Median
+- 75th percentile
+- 90th percentile
+- Mean
+- Standard deviation
+
+Verified result:
+
+- Portfolio KPI rows: 10
+
+### FastAPI REST API
+
+The programmatic service layer is implemented under:
+
+`src/api/`
+
+Main application:
+
+`src/api/main.py`
+
+Company routes:
+
+`src/api/routes/companies.py`
+
+Analytics routes:
+
+`src/api/routes/analytics.py`
+
+The API provides access to:
+
+- Company listings
+- Company details
+- Financial ratios
+- Valuation analytics
+- Stock-price information
+- Company signals
+- Sector analytics
+- Cluster analytics
+- Outlier analytics
+- Portfolio statistics
+
+The application also exposes OpenAPI-compatible documentation.
+
+### API Deliverables
+
+API integration artifacts include:
+
+`openapi.json`
+
+`postman_collection.json`
+
+Dedicated API tests are implemented in:
+
+`tests/api/test_api.py`
+
+The tests cover successful requests as well as invalid companies, invalid sectors, invalid years, and invalid query parameters.
+
+### Docker Support
+
+Container configuration is provided through:
+
+`Dockerfile`
+
+`.dockerignore`
+
+The application container uses Python 3.12 and launches the FastAPI service with Uvicorn on port 8000.
+
+### Continuous Integration
+
+Automated CI is configured in:
+
+`.github/workflows/ci.yml`
+
+The workflow:
+
+1. Checks out the repository.
+2. Configures Python 3.12.
+3. Installs project dependencies.
+4. Verifies critical imports.
+5. Imports the FastAPI application.
+6. Executes the complete automated test suite.
+
+### Portfolio Summary Report
+
+Portfolio-level PDF reporting is implemented in:
+
+`src/reports/portfolio_summary.py`
+
+Generated report:
+
+`reports/portfolio_summary.pdf`
+
+Verified source KPI rows:
+
+- 10
+
+Portfolio summary QA status:
+
+**PASS**
+
+### Sector Reports
+
+Sector-level PDF reporting is implemented in:
+
+`src/reports/sector_reports.py`
+
+Verified final results:
+
+- Broad sectors: 10
+- Companies represented: 92
+- Sector PDFs generated: 10
+- Valid sector PDFs: 10
+
+Output directory:
+
+`reports/sector_reports/`
+
+### Final Radar Coverage
+
+Final radar-chart coverage:
+
+- Companies: 92
+- Radar charts: 92 / 92
+
+### Automated Testing
+
+The complete automated regression suite was executed with pytest.
+
+Verified result:
+
+**559 passed**
+
+HTML test evidence:
+
+`reports/pytest_report.html`
+
+### Analyst Documentation
+
+Final analyst documentation:
+
+`docs/analyst_guide.pdf`
+
+### Acceptance Checklist
+
+The final Sprint 1-6 acceptance-checklist generator is implemented in:
+
+`src/reports/acceptance_checklist.py`
+
+Generated document:
+
+`docs/acceptance_checklist.pdf`
+
+Verified acceptance results:
+
+- Core artifacts: 18 / 18
+- Radar charts: 92 / 92
+- Company tear sheets: 92 / 92
+- Sector reports: 10 / 10
+- Final acceptance status: PASS
+
+Detailed Sprint 6 documentation is maintained in:
+
+`sprint6_retro.md`
+
+---
+
+## Final Platform Architecture
+
+The final workflow is:
 
 ```text
-Parsed rows: 80
-Companies: 5
-Parse failures: 0
-CAGR validations: 30
-Validation pass: 23
-Manual review: 1
-Not comparable: 6
-
-nifty100.db
-
-output/analysis_parsed.csv
-output/pros_cons.csv
-output/cfo_quality_score.csv
-output/cashflow_distress_flags.csv
-output/capital_allocation_matrix.csv
-output/cashflow_intelligence.xlsx
-output/day34_pdf_validation.csv
-
-reports/valuation_summary.xlsx
-reports/tearsheets/
-
-logs/pdf_failures.log
-
-
-
-
-
-
-
+Raw Financial Data
+        |
+        v
+ETL & Validation
+        |
+        v
+SQLite Financial Database
+        |
+        v
+Financial KPI Engines
+        |
+        +----------------------+
+        |                      |
+        v                      v
+Screening & Ranking      Valuation Analytics
+        |                      |
+        +----------+-----------+
+                   |
+                   v
+          Peer & Sector Analytics
+                   |
+        +----------+-----------+
+        |                      |
+        v                      v
+Cash-Flow Intelligence   Pros / Cons Intelligence
+        |                      |
+        +----------+-----------+
+                   |
+                   v
+         Advanced Analytics
+     Clustering / Outliers /
+       Portfolio Statistics
+                   |
+        +----------+-----------+
+        |                      |
+        v                      v
+Streamlit Dashboard       FastAPI REST API
+        |                      |
+        +----------+-----------+
+                   |
+                   v
+         Automated Reporting
+ Company / Sector / Portfolio PDFs
+                   |
+                   v
+        Final QA & Acceptance
