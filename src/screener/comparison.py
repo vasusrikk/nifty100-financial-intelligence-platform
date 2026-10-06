@@ -61,7 +61,7 @@ def build_company_index(rows):
     """
 
     return {
-        str(row["company_id"]).upper(): row
+        str(row["company_id"]).strip().upper(): row
         for row in rows
     }
 

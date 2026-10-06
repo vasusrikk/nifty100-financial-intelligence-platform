@@ -182,7 +182,7 @@ def parse_analysis():
 
     for row in source.itertuples(index=False):
 
-        company_id = str(row.company_id).strip()
+        company_id = str(row.company_id).strip().upper()
 
         for source_column, metric_type in METRIC_COLUMNS.items():
 
