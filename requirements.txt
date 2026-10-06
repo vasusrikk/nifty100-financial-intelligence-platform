@@ -18,3 +18,4 @@ httpx
 black
 ruff
 pypdf
+matplotlib==3.11.2
