@@ -28,3 +28,17 @@ Thumbs.db
 # Generated reports
 reports/
 .venv312/
+
+
+# Final required report deliverables
+!reports/
+reports/*
+!reports/radar_charts/
+!reports/radar_charts/*.png
+!reports/tearsheets/
+!reports/tearsheets/*.pdf
+!reports/sector/
+!reports/sector/*.pdf
+!reports/portfolio/
+!reports/portfolio/portfolio_summary.pdf
+!reports/pytest_report.html

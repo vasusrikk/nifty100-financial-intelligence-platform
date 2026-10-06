@@ -1,0 +1,5 @@
+# Binary project artifacts - never perform line-ending conversion
+*.pdf -text
+*.png -text
+*.xlsx -text
+*.db -text

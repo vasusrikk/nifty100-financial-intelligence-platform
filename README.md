@@ -557,7 +557,7 @@ Portfolio-level PDF reporting is implemented in:
 
 Generated report:
 
-`reports/portfolio_summary.pdf`
+`reports/portfolio/portfolio_summary.pdf`
 
 Verified source KPI rows:
 
@@ -582,7 +582,7 @@ Verified final results:
 
 Output directory:
 
-`reports/sector_reports/`
+'reports/sector/'
 
 ### Final Radar Coverage
 

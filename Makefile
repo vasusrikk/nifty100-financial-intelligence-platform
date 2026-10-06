@@ -9,19 +9,24 @@ load:
 ratios:
 	python -m src.analytics.populate_ratios
 
-# Run complete automated test suite
+# Run complete automated test suite and generate HTML report
 test:
-	python -m pytest tests -q
+	python -m pytest tests -q --html=reports/pytest_report.html --self-contained-html
 
-# Generate all 92 company tear sheets
+# Generate all required reports:
+# 92 company tearsheets + 11 sector reports + portfolio summary
 report:
-	python -m src.reports.batch_generate
+	python -m src.reports.batch_generate 
+
+	python -m src.reports.sector_reports
+
+	python -m src.reports.portfolio_summary
 
 # Generate portfolio summary PDF
 portfolio:
 	python -m src.reports.portfolio_summary
 
-# Generate all sector reports
+# Generate all 11 sector reports
 sectors:
 	python -m src.reports.sector_reports
 
@@ -39,9 +44,10 @@ api:
 
 # Final automated QA
 final-qa:
-	python -m pytest tests -q
-	python -m src.reports.portfolio_summary
+	python -m pytest tests -q --html=reports/pytest_report.html --self-contained-html
+	python -m src.reports.batch_generate
 	python -m src.reports.sector_reports
+	python -m src.reports.portfolio_summary
 	python -m src.reports.acceptance_checklist
 
 # Remove Python/pytest caches
